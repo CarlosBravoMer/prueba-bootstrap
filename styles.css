@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    height:calc(100vh - 70px);
+}
+
+header{
+    max-height: 70px;
+}
+
+main{
+    height: 50%;
+}
+
+.main-logo{
+    width: 30%;
+    margin-top: 8em;
+}
+
+.main-nombre{
+    font-size: 5.5rem;
+    margin-top: -0.4em;
+}
+
+.main-subnombre{
+    margin-top: -.5em;
+}
+
+footer{
+    height: 30%;
+}
+
+.contenedor-fondo-home{
+    height: 30%;
+}
+
+.fondo-home{
+    filter: grayscale(1);
+    opacity: .6;
+}
+
+/* FILTROS */
+
+.table>:not(caption)>*>*{
+    border-bottom-width: 0;
+}
+
+.restaurantes{
+    font-size: 12px;
+}
