@@ -74,3 +74,8 @@ footer {
   background-image: url(recursos/fondo-home.png);
   background-size: 450px;
 }
+
+.card {
+  border-image: url("recursos/linea-separadora.png") 0 0 100% 0 stretch;
+  border-image-width: 0 0 3px 0; /* ajusta el valor para el ancho de la parte central */
+}
