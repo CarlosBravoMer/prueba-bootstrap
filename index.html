@@ -48,18 +48,25 @@
         </div>
     </header>
 
-    <main class="container-fluid text-center d-flex flex-column align-items-center">
-        <img src="/recursos/fish-logo.svg" alt="" class="main-logo">
-        <h2 class="text-dark fst-italic main-nombre">nyaming</h2>
-        <h3 class="fst-italic text-dark main-subnombre sm">el <b class="text-black-50">TAKE AWAY</b> proxim</h3>
+    <main class="d-flex flex-column justify-content-between pt-5"
+        style="height: calc(100vh - 70px); min-height: 600px;">
+        <div class="container-fluid text-center" style="max-width: 540px;">
+            <div>
+                <img src="recursos/fish-logo.svg" alt="LOGOTIPO" class="w-25">
 
-        <button class="mt-5 px-5 py-1 border-0 bg-dark text-light rounded-5" onclick="getLocation()">ACTIVAR
-            UBICACIÓN</button>
+                <h2 class="titulo-index fw-medium fst-italic">nyaming</h2>
+
+                <h3 class="subtitulo-index fs-6">el <strong>TAKE AWAY</strong> proxim</h3>
+
+                <button class="mt-5 px-5 py-1 border-0 bg-dark text-light rounded-5">ACTIVAR UBICACIÓN</button>
+            </div>
+
+        </div>
+
+        <div class="fondo-index">
+        </div>
     </main>
 
-    <div class="position-absolute bottom-0 w-100 contenedor-fondo-home">
-        <img src="recursos/fondo-home.png" alt="" class="w-100 fondo-home object-fit-cover">
-    </div>
 </body>
 
 </html>
