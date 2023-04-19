@@ -85,7 +85,7 @@
                 </div>
             </div>
 
-            <div class="d-flex flex-column mt-4">
+            <div class="d-flex flex-column  mt-4">
 
                 <div class="form-check form-switch d-flex justify-content-between align-items-center px-4 py-1">
                     <label class="form-check-label fst-italic text-primary" for="switch-1">Centre de venda de varis
@@ -410,6 +410,122 @@
                             s'entreguen el mateix torn</label>
                         <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
                     </div>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <div class="d-flex justify-content-center gap-5">
+                    <div
+                        class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
+                        <label class="form-check-label" for="switch-1">MATI</label>
+                        <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                    </div>
+
+                    <div
+                        class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
+                        <label class="form-check-label" for="switch-2">TARDA</label>
+                        <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-2">
+                    </div>
+
+                    <div
+                        class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
+                        <label class="form-check-label" for="switch-2">NIT</label>
+                        <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-2">
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column">
+
+                    <div class="form-check d-flex justify-content-between align-items-center gap-2 py-3 px-4">
+                        <label class="form-check-label">Hora màxima sol·licitut de comandes</label>
+                        <input class="form-check-input fs-2 m-0" type="checkbox">
+                    </div>
+
+                    <div class="form-check w-100 d-flex justify-content-between align-items-center py-3 px-4">
+                        <label class="form-check-label">Minuts abans de tancar</label>
+                        <input class="form-check-input fs-2 m-0" type="checkbox">
+                    </div>
+
+                    <div>
+                        <input type="time">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 p-2">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div
+                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
+                            <label for="confirmacionComandas">Comandes necessiten confirmació del client</label>
+                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                            <input type="text" class="col-3 text-center" placeholder="0,00€">
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-2">
+                        <div
+                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
+                            <label for="controlStock">Control d'Estoc en productes seleccionats</label>
+                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-2">
+                        <div
+                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
+                            <label for="gestionHoras">Gestió d'hores recollida en local</label>
+                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-2">
+                        <div
+                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
+                            <label for="intervaloHoras">Interval d'entregues</label>
+                            <select name="minutos" id="minutos" class="col-2 text-center rounded-5 px-2">
+                                <option value="1">5</option>
+                                <option value="2">10</option>
+                                <option value="3">15</option>
+                                <option value="4">20</option>
+                                <option value="5">25</option>
+                                <option value="6">30</option>
+                                <option value="7">35</option>
+                                <option value="8">40</option>
+                                <option value="8">44</option>
+                                <option value="8">50</option>
+                                <option value="8">55</option>
+                                <option value="8">60</option>
+                            </select>
+                            <select name="tiempoPedidos" id="tiempoPedidos" class="col-6 text-center rounded-5 px-2">
+                                <option value="1">Inmediat</option>
+                                <option value="2" selected>minuts</option>
+                                <option value="3">horas</option>
+                                <option value="4">dias</option>
+                                <option value="5">semana</option>
+                                <option value="6">mes</option>
+                                <option value="7">año</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-2">
+                        <div
+                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
+                            <label for="permitirEntregas">Permet hores duplicades en entregues</label>
+                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-2">
+                        <div
+                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
+                            <label for="contadorDiario">Comptadors diaris/hores</label>
+                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
