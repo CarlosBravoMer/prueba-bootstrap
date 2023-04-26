@@ -49,48 +49,54 @@
     </header>
 
     <main class="text-center">
-        <form class="">
+        <form class="p-2">
 
             <h1 class="fst-italic pt-4">ALTA CLIENTE</h1>
 
-            <div class="mt-4 d-flex justify-content-between align-items-center p-2">
+            <div class="d-lg-flex justify-content-between align-items-center">
+                <div class="mt-4 d-flex justify-content-between align-items-center p-2 gap-lg-4">
 
-                <button class="btn btn-primary rounded-5 px-4 py-1">GUARDAR</button>
-                <button class="btn btn-primary rounded-5 px-4 py-1">EDITAR</button>
+                    <button class="btn btn-primary rounded-5 px-4 py-1">GUARDAR</button>
+                    <button class="btn btn-primary rounded-5 px-4 py-1">EDITAR</button>
 
-                <div class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
-                    <div class="text-center">
-                        <label class="form-check-label" for="flexSwitchCheckDefault">DESHABILITA WEB</label>
+                    <div
+                        class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
+                        <div class="text-center">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">DESHABILITA WEB</label>
+                        </div>
+                        <div class="text-center">
+                            <input class="form-check-input fs-2 m-auto" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault">
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <input class="form-check-input fs-2 m-auto" type="checkbox" role="switch"
-                            id="flexSwitchCheckDefault">
-                    </div>
+
                 </div>
 
+
+                <div class="d-flex flex-column">
+
+                    <div
+                        class="form-check form-switch d-flex justify-content-between align-items-center py-3 px-5 gap-lg-2">
+                        <label class="form-check-label" for="switch-1">Avui no hi ha servei a domicili</label>
+                        <input class="form-check-input fs-2 m-0" type="checkbox" role="switch" id="switch-1">
+                    </div>
+
+                    <div
+                        class="form-check form-switch d-flex justify-content-between align-items-center py-3 px-5 gap-lg-2">
+                        <label class="form-check-label" for="switch-2">Desactiva comandes</label>
+                        <input class="form-check-input fs-2 m-0" type="checkbox" role="switch" id="switch-2">
+
+                    </div>
+                </div>
             </div>
 
+            <div class="d-flex flex-column flex-lg-row justify-content-lg-between mt-4">
 
-            <div class="d-flex flex-column">
-
-                <div class="form-check form-switch d-flex justify-content-between align-items-center py-3 px-5">
-                    <label class="form-check-label" for="switch-1">Avui no hi ha servei a domicili</label>
-                    <input class="form-check-input fs-2 m-0" type="checkbox" role="switch" id="switch-1">
-                </div>
-
-                <div class="form-check form-switch w-100 d-flex justify-content-between align-items-center py-3 px-5">
-                    <label class="form-check-label" for="switch-2">Desactiva comandes</label>
-                    <input class="form-check-input fs-2 m-0" type="checkbox" role="switch" id="switch-2">
-
-                </div>
-            </div>
-
-            <div class="d-flex flex-column  mt-4">
-
-                <div class="form-check form-switch d-flex justify-content-between align-items-center px-4 py-1">
+                <div
+                    class="form-check form-switch d-flex justify-content-between align-items-center px-4 py-1 gap-lg-2">
                     <label class="form-check-label fst-italic text-primary" for="switch-1">Centre de venda de varis
                         clients</label>
-                    <input class="form-check-input fs-2" type="checkbox" role="switch" id="switch-1">
+                    <input class="form-check-input fs-2 m-auto" type="checkbox" role="switch" id="switch-1">
                 </div>
 
                 <div class="form-group d-flex justify-content-between align-items-center px-4 py-2">
@@ -102,94 +108,98 @@
                 </div>
             </div>
 
-            <div class="row p-2">
+            <div class="d-lg-flex">
+                <div>
+                    <div class="row p-2">
 
-                <div class="col-6">
-                    <label for="codigoCliente" class="form-label">Códi Client</label>
-                    <input type="text" class="form-control rounded-5" id="codigoCliente">
+                        <div class="col-6">
+                            <label for="codigoCliente" class="form-label">Códi Client</label>
+                            <input type="text" class="form-control rounded-5" id="codigoCliente">
+                        </div>
+
+                        <div class="col-6">
+                            <label for="DNI" class="form-label">DNI/NIF</label>
+                            <input type="text" class="form-control rounded-5" id="DNI">
+                        </div>
+
+                    </div>
+
+                    <div class="row p-2">
+                        <div class="col-6">
+                            <label for="telefono" class="form-label">Télefono</label>
+                            <input type="text" class="form-control rounded-5" id="telefono">
+                        </div>
+                        <div class="col-6">
+                            <label for="movil" class="form-label">Móbil</label>
+                            <input type="text" class="form-control rounded-5" id="movil">
+                        </div>
+                        <div class="col-12 col-lg-6 p-2">
+                            <label for="nombre" class="form-label">Nom comercial client</label>
+                            <input type="text" class="form-control rounded-5" id="nombre">
+                        </div>
+
+                        <div class="col-12 col-lg-6 p-2">
+                            <label for="razonSocial" class="form-label">Raó social</label>
+                            <input type="text" class="form-control rounded-5" id="razonSocial">
+                        </div>
+
+                        <div class="col-12 col-lg-6 p-2">
+                            <label for="website" class="form-label">URL del lloc</label>
+                            <input type="url" class="form-control rounded-5" id="website">
+                        </div>
+
+                        <div class="col-12 col-lg-6 p-2">
+                            <label for="ubicacion" class="form-label">veure ubicació del local</label>
+                            <input type="text" class="form-control rounded-5" id="ubicacion">
+                        </div>
+
+                        <div class="col-12 col-lg-6 p-2">
+                            <label for="personaContacto" class="form-label">Persona de contacte</label>
+                            <input type="text" class="form-control rounded-5" id="personaContacto">
+                        </div>
+
+                        <div class="col-12 col-lg-6 p-2">
+                            <label for="mail" class="form-label">mail</label>
+                            <input type="email" class="form-control rounded-5" id="mail">
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="col-6">
-                    <label for="DNI" class="form-label">DNI/NIF</label>
-                    <input type="text" class="form-control rounded-5" id="DNI">
-                </div>
-
-            </div>
-
-            <div class="row p-2">
-                <div class="col-6">
-                    <label for="telefono" class="form-label">Télefono</label>
-                    <input type="text" class="form-control rounded-5" id="telefono">
-                </div>
-                <div class="col-6">
-                    <label for="movil" class="form-label">Móbil</label>
-                    <input type="text" class="form-control rounded-5" id="movil">
+                <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center m-auto">
+                    <img src="recursos/LOGO_Cliente_200057.jpg" alt="LOGOTIPO" class="w-50">
+                    <input type="file" class="form-control rounded-5 px-2 w-75" id="logotipo">
                 </div>
             </div>
 
-            <div class="col-12 p-2">
-                <label for="nombre" class="form-label">Nom comercial client</label>
-                <input type="text" class="form-control rounded-5" id="nombre">
-            </div>
-
-            <div class="col-12 p-2">
-                <label for="razonSocial" class="form-label">Raó social</label>
-                <input type="text" class="form-control rounded-5" id="razonSocial">
-            </div>
-
-            <div class="col-12 p-2">
-                <label for="website" class="form-label">URL del lloc</label>
-                <input type="url" class="form-control rounded-5" id="website">
-            </div>
-
-            <div class="col-12 p-2">
-                <label for="ubicacion" class="form-label">veure ubicació del local</label>
-                <input type="text" class="form-control rounded-5" id="ubicacion">
-            </div>
-
-            <div class="col-12 p-2">
-                <label for="personaContacto" class="form-label">Persona de contacte</label>
-                <input type="text" class="form-control rounded-5" id="personaContacto">
-            </div>
-
-            <div class="col-12 p-2">
-                <label for="mail" class="form-label">mail</label>
-                <input type="email" class="form-control rounded-5" id="mail">
-            </div>
-
-            <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center">
-                <img src="recursos/LOGO_Cliente_200057.jpg" alt="LOGOTIPO" class="w-50">
-                <input type="file" class="form-control rounded-5 p-2" id="logotipo">
-            </div>
-
-            <div class="col-12 p-2">
-                <label for="direccion" class="form-label">CARRER</label>
-                <input type="text" class="form-control rounded-5" id="direccion">
-            </div>
 
 
-            <div class="row p-2">
-                <div class="col-6">
+            <div class="row align-items-center p-2">
+                <div class="col-12 col-lg-4 p-2">
+                    <label for="direccion" class="form-label">CARRER</label>
+                    <input type="text" class="form-control rounded-5" id="direccion">
+                </div>
+                <div class="col-6 col-lg-2">
                     <label for="calleNum" class="form-label m-0">Nº</label>
                     <input type="number" class="form-control rounded-5" id="calleNum">
                 </div>
 
-                <div class="col-6">
+                <div class="col-6 col-lg-2">
                     <label for="cp" class="form-labe">C.P</label>
-                    <input type="email" class="form-control rounded-5" id="cp">
+                    <input type="text" class="form-control rounded-5" id="cp">
                 </div>
 
-                <div class="col-12 p-2">
+                <div class="col-12 p-2 col-lg-4">
                     <label for="poblacion" class="form-label">Población</label>
                     <input type="text" class="form-control rounded-5" id="poblacion">
                 </div>
 
-                <div class="col-12 p-2">
+                <div class="col-12 col-lg-4 p-2">
                     <label for="provincia" class="form-label">Provincia</label>
                     <input type="text" class="form-control rounded-5" id="provincia">
                 </div>
 
-                <div class="col-12">
+                <div class="col-12 col-lg-4">
                     <label for="tipoRestaurante">País</label>
                     <select class="form-select" aria-label="Default select example">
                         <option value="1">España</option>
@@ -197,138 +207,148 @@
                     </select>
                 </div>
 
-            </div>
-
-            <div class="p-2">
-                <label for="tipoRestaurante">Sector</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option value="1">Selecciona</option>
-                    <option value="2">Agricultura i Ramaderia</option>
-                    <option value="3">Art i cultura</option>
-                    <option value="4">Caza y Pesca</option>
-                    <option value="5" selected>Comercio</option>
-                    <option value="6">Comunicacions</option>
-                    <option value="7">Construccio</option>
-                    <option value="8">Educatiu</option>
-                    <option value="9">Energetic</option>
-                    <option value="10">Fabrica i Industria</option>
-                    <option value="11">Financer</option>
-                    <option value="12">Industrial</option>
-                    <option value="13">Miner/Forestal</option>
-                    <option value="14">Sanitari</option>
-                    <option value="15">Serveis profesional</option>
-                    <option value="16">Transport</option>
-                    <option value="17">Turismo</option>
-                </select>
-            </div>
-
-            <div class="d-flex justify-content-between align-items-center p-2">
-                <div>
-                    <label for="activitat">Activitat</label>
+                <div class="p-2 col-lg-4">
+                    <label for="tipoRestaurante">Sector</label>
                     <select class="form-select" aria-label="Default select example">
-                        <option value="1">Selecciona activitat</option>
-                        <option value="2">A la brasa i pats preparats</option>
-                        <option value="3">Art i Musica</option>
-                        <option value="5" selected>Bar - Entrepans</option>
-                        <option value="6">Botiga Alimentacio</option>
-                        <option value="7">Carniceria</option>
-                        <option value="8">Charcuteria</option>
-                        <option value="9">Frutes i verdures</option>
-                        <option value="10">Llenya i carbo</option>
+                        <option value="1">Selecciona</option>
+                        <option value="2">Agricultura i Ramaderia</option>
+                        <option value="3">Art i cultura</option>
+                        <option value="4">Caza y Pesca</option>
+                        <option value="5" selected>Comercio</option>
+                        <option value="6">Comunicacions</option>
+                        <option value="7">Construccio</option>
+                        <option value="8">Educatiu</option>
+                        <option value="9">Energetic</option>
+                        <option value="10">Fabrica i Industria</option>
+                        <option value="11">Financer</option>
+                        <option value="12">Industrial</option>
+                        <option value="13">Miner/Forestal</option>
+                        <option value="14">Sanitari</option>
+                        <option value="15">Serveis profesional</option>
+                        <option value="16">Transport</option>
+                        <option value="17">Turismo</option>
                     </select>
                 </div>
+            </div>
 
-                <div class="align-self-end">
-                    <button class="btn btn-primary rounded-5">afegir</button>
+
+            <div class="d-lg-flex justify-content-lg-between p-2">
+                <div class="d-flex justify-content-between align-items-center p-2 gap-lg-4">
+                    <div>
+                        <label for="activitat">Activitat</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="1">Selecciona activitat</option>
+                            <option value="2">A la brasa i pats preparats</option>
+                            <option value="3">Art i Musica</option>
+                            <option value="5" selected>Bar - Entrepans</option>
+                            <option value="6">Botiga Alimentacio</option>
+                            <option value="7">Carniceria</option>
+                            <option value="8">Charcuteria</option>
+                            <option value="9">Frutes i verdures</option>
+                            <option value="10">Llenya i carbo</option>
+                        </select>
+                    </div>
+
+                    <div class="align-self-end">
+                        <button class="btn btn-primary rounded-5">afegir</button>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center p-2 gap-lg-4">
+                    <div>
+                        <label for="especialidad">Especialidad</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="1" selected>Selecciona especialidad</option>
+                            <option value="2">CASOLA</option>
+                            <option value="3">FAMILIAR</option>
+                            <option value="5">INDU</option>
+                            <option value="6">ITALIA</option>
+                            <option value="7">JAPONES</option>
+                            <option value="8">MENJAR RAPID</option>
+                            <option value="9">MEXICA</option>
+                            <option value="10">VEGETARIA</option>
+                            <option value="11">XINES</option>
+                        </select>
+                    </div>
+
+                    <div class="align-self-end">
+                        <button class="btn btn-primary rounded-5">afegir</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="d-flex justify-content-between align-items-center p-2">
-                <div>
-                    <label for="especialidad">Especialidad</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="1" selected>Selecciona especialidad</option>
-                        <option value="2">CASOLA</option>
-                        <option value="3">FAMILIAR</option>
-                        <option value="5">INDU</option>
-                        <option value="6">ITALIA</option>
-                        <option value="7">JAPONES</option>
-                        <option value="8">MENJAR RAPID</option>
-                        <option value="9">MEXICA</option>
-                        <option value="10">VEGETARIA</option>
-                        <option value="11">XINES</option>
-                    </select>
-                </div>
+            <div class="row align-items-center justify-content-center gap-lg-5 p-2 p-lg-0">
+                <div class="mt-5 border border-1 p-2 col-lg-5">
 
-                <div class="align-self-end">
-                    <button class="btn btn-primary rounded-5">afegir</button>
-                </div>
-            </div>
+                    <p class="fw-bold">TIPUS DE SERVEI</p>
 
-            <div class="mt-5">
+                    <div class="d-flex justify-content-center gap-5">
+                        <div
+                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
+                            <label class="form-check-label" for="switch-1">Restaurant</label>
+                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                        </div>
 
-                <p class="fw-bold">TIPUS DE SERVEI</p>
+                        <div
+                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
+                            <label class="form-check-label" for="switch-2">Take Away</label>
+                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-2">
+                        </div>
 
-                <div class="d-flex justify-content-center gap-5">
-                    <div
-                        class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
-                        <label class="form-check-label" for="switch-1">Restaurant</label>
-                        <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
-                    </div>
-
-                    <div
-                        class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
-                        <label class="form-check-label" for="switch-2">Take Away</label>
-                        <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-2">
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="mt-4 p-2">
-                <h2>MOSTRA ACTIVITAT MITJANÇANT</h2>
-
-                <div class="row">
-                    <div class="col-3">
-                        <div class="form-check d-flex flex-column justify-content-center align-items-center">
-                            <label for="lista">Carta</label>
-                            <input class="form-check-input m-auto" type="radio" name="flexRadioDefault" id="lista">
+                        <div
+                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
+                            <label class="form-check-label" for="switch-2">Ambdos</label>
+                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-2">
                         </div>
                     </div>
 
-                    <div class="col-3">
-                        <div class="form-check d-flex flex-column justify-content-center align-items-center">
-                            <label for="lista">Catáleg</label>
-                            <input class="form-check-input m-auto" type="radio" name="flexRadioDefault" id="lista">
-                        </div>
-                    </div>
-
-                    <div class="col-3">
-                        <div class="form-check d-flex flex-column justify-content-center align-items-center">
-                            <label for="lista">Tarifa</label>
-                            <input class="form-check-input m-auto" type="radio" name="flexRadioDefault" id="lista">
-                        </div>
-                    </div>
-
-                    <div class="col-3">
-                        <div class="form-check d-flex flex-column justify-content-center align-items-center">
-                            <label for="lista">Llista</label>
-                            <input class="form-check-input m-auto" type="radio" name="flexRadioDefault" id="lista">
-                        </div>
-                    </div>
                 </div>
 
-                <div class="row mt-2">
-                    <div class="col-12 p-2">
-                        <label for="tiposElemento" class="form-label">amb tipus d'element</label>
-                        <input type="text" class="form-control rounded-5" id="tiposElemento">
-                    </div>
-                    <div class="col-12 p-2">
-                        <label for="descripcionActividad" class="form-label">Descripció de l'Activitat</label>
-                        <input type="text" class="form-control rounded-5" id="descripcionActividad">
-                    </div>
-                </div>
+                <div class="mt-4 border border-1 p-2 col-lg-5">
+                    <h2>MOSTRA ACTIVITAT MITJANÇANT</h2>
 
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-check d-flex flex-column justify-content-center align-items-center">
+                                <label for="lista">Carta</label>
+                                <input class="form-check-input m-auto" type="radio" name="flexRadioDefault" id="lista">
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="form-check d-flex flex-column justify-content-center align-items-center">
+                                <label for="lista">Catáleg</label>
+                                <input class="form-check-input m-auto" type="radio" name="flexRadioDefault" id="lista">
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="form-check d-flex flex-column justify-content-center align-items-center">
+                                <label for="lista">Tarifa</label>
+                                <input class="form-check-input m-auto" type="radio" name="flexRadioDefault" id="lista">
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="form-check d-flex flex-column justify-content-center align-items-center">
+                                <label for="lista">Llista</label>
+                                <input class="form-check-input m-auto" type="radio" name="flexRadioDefault" id="lista">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-12 p-2">
+                            <label for="tiposElemento" class="form-label">amb tipus d'element</label>
+                            <input type="text" class="form-control rounded-5" id="tiposElemento">
+                        </div>
+                        <div class="col-12 p-2">
+                            <label for="descripcionActividad" class="form-label">Descripció de l'Activitat</label>
+                            <input type="text" class="form-control rounded-5" id="descripcionActividad">
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
             <div class="mt-4 p-2">
@@ -460,6 +480,7 @@
                             class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
                             <label for="confirmacionComandas">Comandes necessiten confirmació del client</label>
                             <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                            <label for="confirmacionComandas">Mínim per comanda web</label>
                             <input type="text" class="col-3 text-center" placeholder="0,00€">
                         </div>
                     </div>
@@ -795,7 +816,34 @@
                     </div>
                 </div>
 
+                <div class="mt-5">
+                    <h2 class="mt-5">SERVICIO A DOMICILIO</h2>
 
+                    <div class="mt-5">
+                        <h2 class="mt-4">POBLACIONES CON SERVICIO A DOMICILIO</h2>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <span class="px-2">POBLACIONES DISPONIBLES</span>
+                                <textarea name="" id="" cols="15" rows="10"></textarea>
+                                <br>
+                                <button class="border-0 rounded-2 px-1">>></button>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <span class="px-2">POBLACIONES CON REPARTO</span>
+                                <textarea name="" id="" cols="15" rows="10"></textarea>
+                                <br>
+                                <button class="border-0 rounded-2 px-1">
+                                    << </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 text-center p-2">
+                        <span>AFEGIR POBLACIÓ</span>
+                        <input type="text">
+                        <button class="rounded-5 px-2">Grabar</button>
+                    </div>
+                </div>
 
 
 
@@ -803,9 +851,29 @@
                     <h2>HORARIS</h2>
                     <p>Els nostres horaris</p>
 
-                    <div class="row">
+                    <div class="d-flex justify-content-center gap-5">
+                        <div
+                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
+                            <label class="form-check-label" for="switch-1">MATI</label>
+                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                        </div>
+
+                        <div
+                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
+                            <label class="form-check-label" for="switch-2">TARDA</label>
+                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-2">
+                        </div>
+
+                        <div
+                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
+                            <label class="form-check-label" for="switch-2">NIT</label>
+                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-2">
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
                         <div class="col-4 d-flex gap-1 justify-content-center">
-                            <label for="">LU</label>
+                            <label for="">DL</label>
                             <input type="checkbox">
                         </div>
                         <div class="col-4">
@@ -915,7 +983,7 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col-4 d-flex gap-1 justify-content-center">
-                            <label for="">MA</label>
+                            <label for="">DT</label>
                             <input type="checkbox">
                         </div>
                         <div class="col-4">
@@ -1025,7 +1093,7 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col-4 d-flex gap-1 justify-content-center">
-                            <label for="">MI</label>
+                            <label for="">DC</label>
                             <input type="checkbox">
                         </div>
                         <div class="col-4">
@@ -1135,7 +1203,7 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col-4 d-flex gap-1 justify-content-center">
-                            <label for="">JU</label>
+                            <label for="">DJ</label>
                             <input type="checkbox">
                         </div>
                         <div class="col-4">
@@ -1245,7 +1313,7 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col-4 d-flex gap-1 justify-content-center">
-                            <label for="">VI</label>
+                            <label for="">DV</label>
                             <input type="checkbox">
                         </div>
                         <div class="col-4">
@@ -1355,7 +1423,7 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col-4 d-flex gap-1 justify-content-center">
-                            <label for="">SA</label>
+                            <label for="">DS</label>
                             <input type="checkbox">
                         </div>
                         <div class="col-4">
@@ -1465,7 +1533,7 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col-4 d-flex gap-1 justify-content-center">
-                            <label for="">DO</label>
+                            <label for="">DG</label>
                             <input type="checkbox">
                         </div>
                         <div class="col-4">
@@ -1577,10 +1645,11 @@
                 </div>
 
                 <div class="mt-4">
-                    <h2>Periodo de vacaciones</h2>
-                    <div class="row gap-2 justify-content-center">
+                    <h2>FESTIUS</h2>
+                    <div class="row gap-2 justify-content-center align-items-center p-2">
+                        <h2>Període de vacances</h2>
                         <div class=" row col-6">
-                            <label for="inicioVacaciones">Inicio</label>
+                            <label for="inicioVacaciones">Inici</label>
                             <input type="date" name="finVacaciones">
                         </div>
                         <div class="row col-6">
@@ -1588,67 +1657,38 @@
                             <input type="date" name="finVacaciones">
                         </div>
                     </div>
-                    <button class="mt-4 rounded-5 py-1 px-4">Añadir</button>
+                    <button class="mt-4 rounded-5 py-1 px-4">Afegir</button>
                 </div>
 
                 <div class="mt-4">
-                    <h2>Nuestros dias festivos</h2>
-                    <div class="row gap-2 justify-content-center">
+                    <h2>Els nostres dies festius</h2>
+                    <div class="row gap-2 justify-content-center align-items-center p-2">
                         <div class=" row col-8">
-                            <label for="diaFestivo">Festivo 1</label>
+                            <label for="diaFestivo">Festiu 1</label>
                             <input type="date" name="diFestivo">
                         </div>
                         <div class=" row col-8">
-                            <label for="inicioVacaciones">Festivo 2</label>
+                            <label for="inicioVacaciones">Festiu 2</label>
                             <input type="date" name="diaFestivo">
                         </div>
                     </div>
-                    <button class="mt-4 rounded-5 py-1 px-4">Añadir</button>
+                    <button class="mt-4 rounded-5 py-1 px-4">Afegir</button>
                 </div>
 
                 <div class="mt-4">
                     <h2>Festivos que son dias laborables</h2>
-                    <div class="row gap-2 justify-content-center">
+                    <div class="row gap-2 justify-content-center align-items-center p-2">
                         <div class=" row col-8">
-                            <label for="diaFestivo">Festivo 1</label>
+                            <label for="diaFestivo">Festiu 1</label>
                             <input type="date" name="diFestivo">
                         </div>
                         <div class=" row col-8">
-                            <label for="inicioVacaciones">Festivo 2</label>
+                            <label for="inicioVacaciones">Festiu 2</label>
                             <input type="date" name="diaFestivo">
                         </div>
                     </div>
-                    <button class="mt-4 rounded-5 py-1 px-4">Añadir</button>
+                    <button class="mt-4 rounded-5 py-1 px-4">Afegir</button>
                 </div>
-
-                <div class="mt-5">
-                    <h2 class="mt-5">SERVICIO A DOMICILIO</h2>
-
-                    <div class="mt-5">
-                        <h2 class="mt-4">POBLACIONES CON SERVICIO A DOMICILIO</h2>
-                        <div class="d-flex flex-column">
-                            <div>
-                                <span>POBLACIONES DISPONIBLES</span>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
-                                <br>
-                                <button>BOTON</button>
-                            </div>
-                            <div>
-                                <span>POBLACIONES CON REPARTO</span>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
-                                <br>
-                                <button>BOTON</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-4 text-center">
-                        <span>AÑADIR POBLACION</span>
-                        <input type="text">
-                        <button class="rounded-5 px-2">Grabar</button>
-                    </div>
-                </div>
-
         </form>
 
     </main>
