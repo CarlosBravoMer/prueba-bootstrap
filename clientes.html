@@ -53,8 +53,9 @@
 
             <h1 class="fst-italic pt-4">ALTA CLIENTE</h1>
 
-            <div class="d-lg-flex justify-content-between align-items-center">
-                <div class="mt-4 d-flex justify-content-between align-items-center p-2 gap-lg-4">
+            <div class="d-lg-flex justify-content-evenly align-items-center mt-4">
+                <div
+                    class="mt-4 d-flex justify-content-between align-items-center align-self-lg-start m-lg-0 gap-lg-4 border border-2 rounded-3 p-2">
 
                     <button class="btn btn-primary rounded-5 px-4 py-1">GUARDAR</button>
                     <button class="btn btn-primary rounded-5 px-4 py-1">EDITAR</button>
@@ -73,7 +74,7 @@
                 </div>
 
 
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column border border-2 rounded-3 p-2 mt-4 mt-lg-0">
 
                     <div
                         class="form-check form-switch d-flex justify-content-between align-items-center py-3 px-5 gap-lg-2">
@@ -81,35 +82,34 @@
                         <input class="form-check-input fs-2 m-0" type="checkbox" role="switch" id="switch-1">
                     </div>
 
-                    <div
-                        class="form-check form-switch d-flex justify-content-between align-items-center py-3 px-5 gap-lg-2">
-                        <label class="form-check-label" for="switch-2">Desactiva comandes</label>
-                        <input class="form-check-input fs-2 m-0" type="checkbox" role="switch" id="switch-2">
+                    <div>
+                        <div
+                            class="form-check form-switch d-flex justify-content-between align-items-center py-3 px-5 gap-lg-2">
+                            <label class="form-check-label" for="switch-2">Desactiva comandes</label>
+                            <input class="form-check-input fs-2 m-0" type="checkbox" role="switch" id="switch-2">
 
+                        </div>
+                        <div class="form-group d-flex justify-content-between align-items-center py-2">
+                            <label class="me-2">Fins el dia:</label>
+                            <div class="input-group w-75">
+                                <input type="date" class="form-control form-control-sm">
+                                <input type="time" class="form-control form-control-sm">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="d-flex flex-column flex-lg-row justify-content-lg-between mt-4">
-
-                <div
-                    class="form-check form-switch d-flex justify-content-between align-items-center px-4 py-1 gap-lg-2">
+            <div class="d-flex flex-column flex-lg-row justify-content-lg-evenly align-items-center mt-4">
+                <div class="form-check form-switch d-flex align-items-center gap-4">
                     <label class="form-check-label fst-italic text-primary" for="switch-1">Centre de venda de varis
                         clients</label>
                     <input class="form-check-input fs-2 m-auto" type="checkbox" role="switch" id="switch-1">
                 </div>
-
-                <div class="form-group d-flex justify-content-between align-items-center px-4 py-2">
-                    <label class="me-2">Fins el dia:</label>
-                    <div class="input-group w-75">
-                        <input type="date" class="form-control form-control-sm">
-                        <input type="time" class="form-control form-control-sm">
-                    </div>
-                </div>
             </div>
 
-            <div class="d-lg-flex">
-                <div>
+            <div class="d-lg-flex align-items-center mt-4 gap-2">
+                <div class="d-flex flex-column">
                     <div class="row p-2">
 
                         <div class="col-6">
@@ -166,7 +166,8 @@
 
                 </div>
 
-                <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center m-auto">
+                <div
+                    class="col-sm-8 d-flex col-lg-6 col-xxl-4 flex-column justify-content-center align-items-center m-auto border border-2 rounded-3 p-2">
                     <img src="recursos/LOGO_Cliente_200057.jpg" alt="LOGOTIPO" class="w-50">
                     <input type="file" class="form-control rounded-5 px-2 w-75" id="logotipo">
                 </div>
@@ -232,7 +233,7 @@
             </div>
 
 
-            <div class="d-lg-flex justify-content-lg-between p-2">
+            <div class="d-lg-flex justify-content-lg-evenly">
                 <div class="d-flex justify-content-between align-items-center p-2 gap-lg-4">
                     <div>
                         <label for="activitat">Activitat</label>
@@ -277,8 +278,8 @@
                 </div>
             </div>
 
-            <div class="row align-items-center justify-content-center gap-lg-5 p-2 p-lg-0">
-                <div class="mt-5 border border-1 p-2 col-lg-5">
+            <div class="row align-items-center justify-content-center gap-lg-5 p-2 p-lg-0 mt-4">
+                <div class="border border-2 rounded-3 p-2 col-lg-5 align-self-lg-start">
 
                     <p class="fw-bold">TIPUS DE SERVEI</p>
 
@@ -304,7 +305,7 @@
 
                 </div>
 
-                <div class="mt-4 border border-1 p-2 col-lg-5">
+                <div class="mt-4 border border-2 rounded-3 p-2 col-lg-5 mt-lg-0">
                     <h2>MOSTRA ACTIVITAT MITJANÇANT</h2>
 
                     <div class="row">
@@ -342,20 +343,21 @@
                             <label for="tiposElemento" class="form-label">amb tipus d'element</label>
                             <input type="text" class="form-control rounded-5" id="tiposElemento">
                         </div>
-                        <div class="col-12 p-2">
-                            <label for="descripcionActividad" class="form-label">Descripció de l'Activitat</label>
-                            <input type="text" class="form-control rounded-5" id="descripcionActividad">
-                        </div>
                     </div>
 
                 </div>
+                <div class="col-12 p-2">
+                    <label for="descripcionActividad" class="form-label">Descripció de l'Activitat</label>
+                    <br>
+                    <textarea rows="5" class="col-12 col-lg-10"></textarea>
+                </div>
             </div>
 
-            <div class="mt-4 p-2">
+            <div class="mt-4 border border-2 rounded-3 p-2">
                 <h2>CONDICIONS DE SERVEI</h2>
 
-                <div class="row">
-                    <div class="col-12">
+                <div class="row align-items-lg-center">
+                    <div class="col-12 col-xl-3 col-md-6">
                         <div
                             class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
                             <label for="pagoPrevio">Pagament previ en totes les comandes</label>
@@ -364,7 +366,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 mt-2">
+                    <div class="col-12 mt-2 col-xl-3 col-md-6 mt-lg-0">
                         <div
                             class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
                             <label for="notificacionEmail">Notifica confirmació al client per mail</label>
@@ -374,7 +376,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 mt-2">
+                    <div class="col-12 mt-2 col-xl-3 col-md-6 mt-lg-0">
                         <div
                             class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
                             <label for="notificacionSms">Notifica confirmació al client per SMS</label>
@@ -384,7 +386,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 mt-2">
+                    <div class="col-12 mt-2 col-xl-3 col-md-6 mt-lg-0">
                         <div
                             class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
                             <label for="pagoBizum">Pagament pasarela Bizzum</label>
@@ -395,45 +397,52 @@
                 </div>
             </div>
 
-            <div class="mt-4">
+            <div class="mt-4 border border-2 rounded-3 p-2">
                 <h2 class="p-2">HORES RECEPCIÓ DE COMANDES I LLIURAMENTS</h2>
-                <p>Termini lliura de la data del comandes</p>
 
-                <div class="row">
-                    <label for="horaEntrega">
-                        <input type="text" class="rounded-5 col-2 px-1">
-                        <select name="horaEntrega" id="horaEntrega" class="rounded-5 px-3 py-1 ">
-                            <option value="min">minutos</option>
-                            <option value="min">horas</option>
-                        </select>
-                    </label>
+                <div class="d-lg-flex">
+                    <div class="col-12 col-lg-3">
+                        <label for="horaEntrega"
+                            class="d-flex flex-column gap-2 justify-content-center align-items-center">
+                            Termini lliura de la data del comandes
+                            <input type="text" class="col-4 col-sm-3 col-lg-8  rounded-5 px-1">
+                            <select name="horaEntrega" id="horaEntrega"
+                                class="col-5 col-sm-3 col-lg-8 rounded-3 px-3 py-1 ">
+                                <option value="min">minutos</option>
+                                <option value="min">horas</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="col-12 col-lg-3 mt-2 m-lg-0">
+                        <div
+                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
+                            <label for="preparacionPedidos">Gestionar preparació demanats</label>
+                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3 mt-2 m-lg-0">
+                        <div
+                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
+                            <label for="controlComandas">Controlar preparació comandes</label>
+                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3 mt-2 m-lg-0">
+                        <div
+                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
+                            <label for="comandasEspeciales">Comandes sol·licitades dins l'horari indicat
+                                s'entreguen el mateix torn</label>
+                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-12 mt-2">
-                    <div
-                        class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
-                        <label for="preparacionPedidos">Gestionar preparació demanats</label>
-                        <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
-                    </div>
-                </div>
-                <div class="col-12 mt-2">
-                    <div
-                        class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
-                        <label for="controlComandas">Controlar preparació comandes</label>
-                        <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
-                    </div>
-                </div>
-                <div class="col-12 mt-2">
-                    <div
-                        class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
-                        <label for="comandasEspeciales">Comandes sol·licitades dins l'horari indicat
-                            s'entreguen el mateix torn</label>
-                        <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
-                    </div>
-                </div>
             </div>
 
-            <div class="mt-4">
+            <div class="mt-4 border border-2 rounded-3 p-2">
                 <div class="d-flex justify-content-center gap-5">
                     <div
                         class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
@@ -454,7 +463,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex flex-column">
+                <div class="row col-12 col-lg-8 d-flex flex-column m-auto">
 
                     <div class="form-check d-flex justify-content-between align-items-center gap-2 py-3 px-4">
                         <label class="form-check-label">Hora màxima sol·licitut de comandes</label>
@@ -475,84 +484,120 @@
             <div class="mt-4 p-2">
 
                 <div class="row">
-                    <div class="col-12">
-                        <div
-                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
-                            <label for="confirmacionComandas">Comandes necessiten confirmació del client</label>
-                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
-                            <label for="confirmacionComandas">Mínim per comanda web</label>
-                            <input type="text" class="col-3 text-center" placeholder="0,00€">
+                    <div class="d-lg-flex border border-2 rounded-3 p-2">
+                        <div class="col-12 col-lg-8 align-items-center">
+                            <div
+                                class="form-check form-switch d-flex flex-column flex-lg-row justify-content-around align-items-center p-0 gap-2">
+                                <div class="d-flex flex-column">
+                                    <label for="confirmacionComandas">Comandes necessiten confirmació del client</label>
+                                    <input class="form-check-input m-auto fs-2" type="checkbox" role="switch"
+                                        id="switch-1">
+                                </div>
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <label for="confirmacionComandas">Mínim per comanda web</label>
+                                    <input type="text" class="col-3 text-center" placeholder="0,00€">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-2 col-lg-4 m-lg-0">
+                            <div
+                                class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
+                                <label for="controlStock">Control d'Estoc en productes seleccionats</label>
+                                <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12 mt-2">
-                        <div
-                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
-                            <label for="controlStock">Control d'Estoc en productes seleccionats</label>
-                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                    <div class="d-lg-flex border border-2 rounded-3 p-2 mt-4">
+                        <div class="col-12 mt-2 col-lg-4">
+                            <div
+                                class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
+                                <label for="gestionHoras">Gestió d'hores recollida en local</label>
+                                <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-12 mt-2">
-                        <div
-                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
-                            <label for="gestionHoras">Gestió d'hores recollida en local</label>
-                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                        <div class="col-12 mt-2 col-lg-4 m-lg-0">
+                            <div
+                                class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
+                                <label for="intervaloHoras">Interval d'entregues</label>
+                                <select name="minutos" id="minutos"
+                                    class="col-4 col-sm-2 col-lg-4 text-center rounded-5">
+                                    <option value="1">5</option>
+                                    <option value="2">10</option>
+                                    <option value="3">15</option>
+                                    <option value="4">20</option>
+                                    <option value="5">25</option>
+                                    <option value="6">30</option>
+                                    <option value="7">35</option>
+                                    <option value="8">40</option>
+                                    <option value="8">44</option>
+                                    <option value="8">50</option>
+                                    <option value="8">55</option>
+                                    <option value="8">60</option>
+                                </select>
+                                <select name="tiempoPedidos" id="tiempoPedidos"
+                                    class="col-4 col-sm-2 col-lg-4 text-center rounded-5 px-2">
+                                    <option value="1">Inmediat</option>
+                                    <option value="2" selected>minuts</option>
+                                    <option value="3">horas</option>
+                                    <option value="4">dias</option>
+                                    <option value="5">semana</option>
+                                    <option value="6">mes</option>
+                                    <option value="7">año</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-12 mt-2">
-                        <div
-                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
-                            <label for="intervaloHoras">Interval d'entregues</label>
-                            <select name="minutos" id="minutos" class="col-2 text-center rounded-5 px-2">
-                                <option value="1">5</option>
-                                <option value="2">10</option>
-                                <option value="3">15</option>
-                                <option value="4">20</option>
-                                <option value="5">25</option>
-                                <option value="6">30</option>
-                                <option value="7">35</option>
-                                <option value="8">40</option>
-                                <option value="8">44</option>
-                                <option value="8">50</option>
-                                <option value="8">55</option>
-                                <option value="8">60</option>
-                            </select>
-                            <select name="tiempoPedidos" id="tiempoPedidos" class="col-6 text-center rounded-5 px-2">
-                                <option value="1">Inmediat</option>
-                                <option value="2" selected>minuts</option>
-                                <option value="3">horas</option>
-                                <option value="4">dias</option>
-                                <option value="5">semana</option>
-                                <option value="6">mes</option>
-                                <option value="7">año</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="col-12 mt-2">
-                        <div
-                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
-                            <label for="permitirEntregas">Permet hores duplicades en entregues</label>
-                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
-                        </div>
-                    </div>
-
-                    <div class="col-12 mt-2">
-                        <div
-                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
-                            <label for="contadorDiario">Comptadors diaris/hores</label>
-                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                        <div class="col-12 mt-2 col-lg-4 m-lg-0">
+                            <div
+                                class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 gap-2">
+                                <label for="permitirEntregas">Permet hores duplicades en entregues</label>
+                                <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                            </div>
                         </div>
                     </div>
 
                 </div>
 
-                <div class="mt-4">
-                    <p class="mb-1">Observacions entrega de comandes</p>
-                    <textarea name="observaciones" id="observaciones" cols="30" rows="10"
-                        placeholder="Observacions..."></textarea>
+                <div class="row mt-4">
+                    <div class="d-lg-flex gap-2">
+                        <div class="col-12 col-lg-6 mt-2 border border-2 rounded-3 p-2">
+                            <div
+                                class="form-check form-switch d-flex flex-column flex-lg-row justify-content-between align-items-center p-0 gap-2">
+                                <div class="d-flex align-items-center gap-2">
+                                    <label for="contadorDiario">Comptadors diaris/hores</label>
+                                    <input class="form-check-input m-auto fs-2" type="checkbox" role="switch"
+                                        id="switch-1">
+                                </div>
+                                <button class="rounded-5 px-2">+</button>
+                            </div>
+
+                            <div class="col-12 m-auto p-4">
+                                <div class="row">
+                                    <span class="col-3">Inici</span>
+                                    <span class="col-3">Final</span>
+                                    <span class="col-3">N Inici</span>
+                                    <span class="col-3">N Final</span>
+                                </div>
+                                <div>
+                                    <div class="row">
+                                        <input type="time" class="col-3 text-center" placeholder="00:00">
+                                        <input type="time" class="col-3 text-center" placeholder="00:00">
+                                        <input type="text" class="col-3 text-center" placeholder="0">
+                                        <input type="text" class="col-3 text-center" placeholder="0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 mt-4">
+                            <p class="mb-1">Observacions entrega de comandes</p>
+                            <textarea name="observaciones" id="observaciones" rows="10" placeholder="Observacions..."
+                                class="col-12 col-lg-10"></textarea>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -560,29 +605,59 @@
             <div class="mt-5">
                 <h2 class="mt-5">SERVEI A DOMICILI</h2>
 
-                <div class="mt-4">
-                    <div
-                        class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
-                        <label class="form-check-label fw-bold fst-italic" for="flexSwitchCheckDefault">ENTREGA A
-                            DOMICILI</label>
-                        <input class="form-check-input fs-2 m-auto" type="checkbox" role="switch"
-                            id="flexSwitchCheckDefault">
-                    </div>
-                    <div class="mt-4 d-flex justify-content-center align-items-center gap-2">
-                        <span>IMPORT MÍNIM A DOMICILI</span>
-                        <input type="text" placeholder="00,00" class="col-2 text-center">€
+                <div class="row align-items-center">
+                    <div class="mt-4 col-12 col-md-6">
+                        <div
+                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
+                            <label class="form-check-label fw-bold fst-italic" for="flexSwitchCheckDefault">ENTREGA A
+                                DOMICILI</label>
+                            <input class="form-check-input fs-2 m-auto" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault">
+                        </div>
+                        <div class="mt-4 d-flex justify-content-center align-items-center gap-2">
+                            <span>IMPORT MÍNIM A DOMICILI</span>
+                            <input type="text" placeholder="00,00" class="col-2 text-center">€
+                        </div>
+
+                        <div
+                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 mt-4">
+                            <label class="form-check-label fw-bold fst-italic" for="flexSwitchCheckDefault">PAGAMENT
+                                PREVI A
+                                DOMICILI</label>
+                            <input class="form-check-input fs-2 m-auto" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault">
+                        </div>
+                        <div class="mt-4 d-flex justify-content-center align-items-center gap-2">
+                            <span>Radi servei a domicili</span>
+                            <input type="text" placeholder="0" class="col-2 text-center">Km.
+                        </div>
                     </div>
 
-                    <div
-                        class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 mt-4">
-                        <label class="form-check-label fw-bold fst-italic" for="flexSwitchCheckDefault">PAGAMENT PREVI A
-                            DOMICILI</label>
-                        <input class="form-check-input fs-2 m-auto" type="checkbox" role="switch"
-                            id="flexSwitchCheckDefault">
-                    </div>
-                    <div class="mt-4 d-flex justify-content-center align-items-center gap-2">
-                        <span>Radi servei a domicili</span>
-                        <input type="text" placeholder="0" class="col-2 text-center">Km.
+                    <div class="mt-4 col-12 col-md-6">
+                        <div>
+                            <h2 class="mt-4">POBLACIONES CON SERVICIO A DOMICILIO</h2>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <span class="px-2">POBLACIONES DISPONIBLES</span>
+                                    <textarea name="" id="" cols="15" rows="10"></textarea>
+                                    <br>
+                                    <button class="border-0 rounded-2 px-1">>></button>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <span class="px-2">POBLACIONES CON REPARTO</span>
+                                    <textarea name="" id="" cols="15" rows="10"></textarea>
+                                    <br>
+                                    <button class="border-0 rounded-2 px-1">
+                                        << </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 text-center p-2">
+                            <span>AFEGIR POBLACIÓ</span>
+                            <input type="text">
+                            <button class="rounded-5 px-2">Grabar</button>
+                        </div>
                     </div>
                 </div>
 
@@ -590,1105 +665,1111 @@
                 <h2 class="mt-5">HORES SERVEI A DOMICILI</h2>
 
                 <div class="mt-4">
-                    <div
-                        class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
-                        <label class="form-check-label fw-bold fst-italic" for="flexSwitchCheckDefault">MATINS</label>
-                        <input class="form-check-input fs-2 m-auto" type="checkbox" role="switch"
-                            id="flexSwitchCheckDefault">
-                    </div>
+                    <div class="row align-items-center">
 
-                    <div class="mt-4 d-flex justify-content-center align-items-center gap-2">
-                        <div class="align-self-start py-3">
-                            <select name="abrirLunes" id="abrirLunes">
-                                <option value="2400">00:00</option>
-                                <option value="0030">00:30</option>
-                                <option value="0100">01:00</option>
-                                <option value="0130">01:30</option>
-                                <option value="0200">02:00</option>
-                                <option value="0230">02:30</option>
-                                <option value="0300">03:00</option>
-                                <option value="0330">03:30</option>
-                                <option value="0400">04:00</option>
-                                <option value="0430">04:30</option>
-                                <option value="0500">05:00</option>
-                                <option value="0530">05:30</option>
-                                <option value="0600">06:00</option>
-                                <option value="0630">06:30</option>
-                                <option value="0700">07:00</option>
-                                <option value="0730">07:30</option>
-                                <option value="0800">08:00</option>
-                                <option value="0830">08:30</option>
-                                <option value="0900">09:00</option>
-                                <option value="0930">09:30</option>
-                                <option value="1000">10:00</option>
-                                <option value="1030">10:30</option>
-                                <option value="1100">11:00</option>
-                                <option value="1130">11:30</option>
-                                <option value="1200">12:00</option>
-                                <option value="1230">12:30</option>
-                                <option value="1300">13:00</option>
-                                <option value="1330">13:30</option>
-                                <option value="1400">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="1500">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="1600">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="1700">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="1800">18:00</option>
-                                <option value="1830">18:30</option>
-                                <option value="1900">19:00</option>
-                                <option value="1930">19:30</option>
-                                <option value="2000">20:00</option>
-                                <option value="2030">20:30</option>
-                                <option value="2100">21:00</option>
-                                <option value="2130">21:30</option>
-                                <option value="2200">22:00</option>
-                                <option value="2230">22:30</option>
-                                <option value="2300">23:00</option>
-                                <option value="2330">23:30</option>
-                            </select>
-                        </div>
-                        <div class="d-flex flex-column">
-
-                            <div class="form-check d-flex py-3 px-2 gap-1">
-                                <input class="form-check-input fs-2 m-0" type="checkbox">
-                                <label class="form-check-label">Hora màxima sol·licitud comanda</label>
+                        <div class="col-12 col-xl-4">
+                            <div
+                                class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
+                                <label class="form-check-label fw-bold fst-italic"
+                                    for="flexSwitchCheckDefault">MATINS</label>
+                                <input class="form-check-input fs-2 m-auto" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault">
                             </div>
 
-                            <div class="form-check d-flex py-3 px-2 gap-1">
-                                <input class="form-check-input fs-2 m-0" type="checkbox">
-                                <label class="form-check-label">Abans de tancament</label>
+                            <div class="mt-4 d-flex justify-content-center align-items-center gap-2">
+                                <div class="align-self-start py-3">
+                                    <select name="abrirLunes" id="abrirLunes">
+                                        <option value="2400">00:00</option>
+                                        <option value="0030">00:30</option>
+                                        <option value="0100">01:00</option>
+                                        <option value="0130">01:30</option>
+                                        <option value="0200">02:00</option>
+                                        <option value="0230">02:30</option>
+                                        <option value="0300">03:00</option>
+                                        <option value="0330">03:30</option>
+                                        <option value="0400">04:00</option>
+                                        <option value="0430">04:30</option>
+                                        <option value="0500">05:00</option>
+                                        <option value="0530">05:30</option>
+                                        <option value="0600">06:00</option>
+                                        <option value="0630">06:30</option>
+                                        <option value="0700">07:00</option>
+                                        <option value="0730">07:30</option>
+                                        <option value="0800">08:00</option>
+                                        <option value="0830">08:30</option>
+                                        <option value="0900">09:00</option>
+                                        <option value="0930">09:30</option>
+                                        <option value="1000">10:00</option>
+                                        <option value="1030">10:30</option>
+                                        <option value="1100">11:00</option>
+                                        <option value="1130">11:30</option>
+                                        <option value="1200">12:00</option>
+                                        <option value="1230">12:30</option>
+                                        <option value="1300">13:00</option>
+                                        <option value="1330">13:30</option>
+                                        <option value="1400">14:00</option>
+                                        <option value="1430">14:30</option>
+                                        <option value="1500">15:00</option>
+                                        <option value="1530">15:30</option>
+                                        <option value="1600">16:00</option>
+                                        <option value="1630">16:30</option>
+                                        <option value="1700">17:00</option>
+                                        <option value="1730">17:30</option>
+                                        <option value="1800">18:00</option>
+                                        <option value="1830">18:30</option>
+                                        <option value="1900">19:00</option>
+                                        <option value="1930">19:30</option>
+                                        <option value="2000">20:00</option>
+                                        <option value="2030">20:30</option>
+                                        <option value="2100">21:00</option>
+                                        <option value="2130">21:30</option>
+                                        <option value="2200">22:00</option>
+                                        <option value="2230">22:30</option>
+                                        <option value="2300">23:00</option>
+                                        <option value="2330">23:30</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex flex-column">
+
+                                    <div class="form-check d-flex py-3 px-2 gap-1">
+                                        <input class="form-check-input fs-2 m-0" type="checkbox">
+                                        <label class="form-check-label">Hora màxima sol·licitud comanda</label>
+                                    </div>
+
+                                    <div class="form-check d-flex py-3 px-2 gap-1">
+                                        <input class="form-check-input fs-2 m-0" type="checkbox">
+                                        <label class="form-check-label">Abans de tancament</label>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+
+                        <div class="col-12 col-xl-4">
+                            <div
+                                class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 mt-4 m-md-0">
+                                <label class="form-check-label fw-bold fst-italic"
+                                    for="flexSwitchCheckDefault">TARDES</label>
+                                <input class="form-check-input fs-2 m-auto" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault">
+                            </div>
+                            <div class="mt-4 d-flex justify-content-center align-items-center gap-2">
+                                <div class="align-self-start py-3">
+                                    <select name="abrirLunes" id="abrirLunes">
+                                        <option value="2400">00:00</option>
+                                        <option value="0030">00:30</option>
+                                        <option value="0100">01:00</option>
+                                        <option value="0130">01:30</option>
+                                        <option value="0200">02:00</option>
+                                        <option value="0230">02:30</option>
+                                        <option value="0300">03:00</option>
+                                        <option value="0330">03:30</option>
+                                        <option value="0400">04:00</option>
+                                        <option value="0430">04:30</option>
+                                        <option value="0500">05:00</option>
+                                        <option value="0530">05:30</option>
+                                        <option value="0600">06:00</option>
+                                        <option value="0630">06:30</option>
+                                        <option value="0700">07:00</option>
+                                        <option value="0730">07:30</option>
+                                        <option value="0800">08:00</option>
+                                        <option value="0830">08:30</option>
+                                        <option value="0900">09:00</option>
+                                        <option value="0930">09:30</option>
+                                        <option value="1000">10:00</option>
+                                        <option value="1030">10:30</option>
+                                        <option value="1100">11:00</option>
+                                        <option value="1130">11:30</option>
+                                        <option value="1200">12:00</option>
+                                        <option value="1230">12:30</option>
+                                        <option value="1300">13:00</option>
+                                        <option value="1330">13:30</option>
+                                        <option value="1400">14:00</option>
+                                        <option value="1430">14:30</option>
+                                        <option value="1500">15:00</option>
+                                        <option value="1530">15:30</option>
+                                        <option value="1600">16:00</option>
+                                        <option value="1630">16:30</option>
+                                        <option value="1700">17:00</option>
+                                        <option value="1730">17:30</option>
+                                        <option value="1800">18:00</option>
+                                        <option value="1830">18:30</option>
+                                        <option value="1900">19:00</option>
+                                        <option value="1930">19:30</option>
+                                        <option value="2000">20:00</option>
+                                        <option value="2030">20:30</option>
+                                        <option value="2100">21:00</option>
+                                        <option value="2130">21:30</option>
+                                        <option value="2200">22:00</option>
+                                        <option value="2230">22:30</option>
+                                        <option value="2300">23:00</option>
+                                        <option value="2330">23:30</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex flex-column">
+
+                                    <div class="form-check d-flex py-3 px-2 gap-1">
+                                        <input class="form-check-input fs-2 m-0" type="checkbox">
+                                        <label class="form-check-label">Hora màxima sol·licitud comanda</label>
+                                    </div>
+
+                                    <div class="form-check d-flex py-3 px-2 gap-1">
+                                        <input class="form-check-input fs-2 m-0" type="checkbox">
+                                        <label class="form-check-label">Abans de tancament</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-4">
+                            <div
+                                class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 mt-4 m-md-0">
+                                <label class="form-check-label fw-bold fst-italic"
+                                    for="flexSwitchCheckDefault">NITS</label>
+                                <input class="form-check-input fs-2 m-auto" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault">
+                            </div>
+                            <div class="mt-4 d-flex justify-content-center align-items-center gap-2">
+                                <div class="align-self-start py-3">
+                                    <select name="abrirLunes" id="abrirLunes">
+                                        <option value="2400">00:00</option>
+                                        <option value="0030">00:30</option>
+                                        <option value="0100">01:00</option>
+                                        <option value="0130">01:30</option>
+                                        <option value="0200">02:00</option>
+                                        <option value="0230">02:30</option>
+                                        <option value="0300">03:00</option>
+                                        <option value="0330">03:30</option>
+                                        <option value="0400">04:00</option>
+                                        <option value="0430">04:30</option>
+                                        <option value="0500">05:00</option>
+                                        <option value="0530">05:30</option>
+                                        <option value="0600">06:00</option>
+                                        <option value="0630">06:30</option>
+                                        <option value="0700">07:00</option>
+                                        <option value="0730">07:30</option>
+                                        <option value="0800">08:00</option>
+                                        <option value="0830">08:30</option>
+                                        <option value="0900">09:00</option>
+                                        <option value="0930">09:30</option>
+                                        <option value="1000">10:00</option>
+                                        <option value="1030">10:30</option>
+                                        <option value="1100">11:00</option>
+                                        <option value="1130">11:30</option>
+                                        <option value="1200">12:00</option>
+                                        <option value="1230">12:30</option>
+                                        <option value="1300">13:00</option>
+                                        <option value="1330">13:30</option>
+                                        <option value="1400">14:00</option>
+                                        <option value="1430">14:30</option>
+                                        <option value="1500">15:00</option>
+                                        <option value="1530">15:30</option>
+                                        <option value="1600">16:00</option>
+                                        <option value="1630">16:30</option>
+                                        <option value="1700">17:00</option>
+                                        <option value="1730">17:30</option>
+                                        <option value="1800">18:00</option>
+                                        <option value="1830">18:30</option>
+                                        <option value="1900">19:00</option>
+                                        <option value="1930">19:30</option>
+                                        <option value="2000">20:00</option>
+                                        <option value="2030">20:30</option>
+                                        <option value="2100">21:00</option>
+                                        <option value="2130">21:30</option>
+                                        <option value="2200">22:00</option>
+                                        <option value="2230">22:30</option>
+                                        <option value="2300">23:00</option>
+                                        <option value="2330">23:30</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex flex-column">
+
+                                    <div class="form-check d-flex py-3 px-2 gap-1">
+                                        <input class="form-check-input fs-2 m-0" type="checkbox">
+                                        <label class="form-check-label">Hora màxima sol·licitud comanda</label>
+                                    </div>
+
+                                    <div class="form-check d-flex py-3 px-2 gap-1">
+                                        <input class="form-check-input fs-2 m-0" type="checkbox">
+
+                                        <label class="form-check-label">Abans de tancament</label>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
 
-                    <div
-                        class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 mt-4">
-                        <label class="form-check-label fw-bold fst-italic" for="flexSwitchCheckDefault">TARDES</label>
-                        <input class="form-check-input fs-2 m-auto" type="checkbox" role="switch"
-                            id="flexSwitchCheckDefault">
-                    </div>
-                    <div class="mt-4 d-flex justify-content-center align-items-center gap-2">
-                        <div class="align-self-start py-3">
-                            <select name="abrirLunes" id="abrirLunes">
-                                <option value="2400">00:00</option>
-                                <option value="0030">00:30</option>
-                                <option value="0100">01:00</option>
-                                <option value="0130">01:30</option>
-                                <option value="0200">02:00</option>
-                                <option value="0230">02:30</option>
-                                <option value="0300">03:00</option>
-                                <option value="0330">03:30</option>
-                                <option value="0400">04:00</option>
-                                <option value="0430">04:30</option>
-                                <option value="0500">05:00</option>
-                                <option value="0530">05:30</option>
-                                <option value="0600">06:00</option>
-                                <option value="0630">06:30</option>
-                                <option value="0700">07:00</option>
-                                <option value="0730">07:30</option>
-                                <option value="0800">08:00</option>
-                                <option value="0830">08:30</option>
-                                <option value="0900">09:00</option>
-                                <option value="0930">09:30</option>
-                                <option value="1000">10:00</option>
-                                <option value="1030">10:30</option>
-                                <option value="1100">11:00</option>
-                                <option value="1130">11:30</option>
-                                <option value="1200">12:00</option>
-                                <option value="1230">12:30</option>
-                                <option value="1300">13:00</option>
-                                <option value="1330">13:30</option>
-                                <option value="1400">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="1500">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="1600">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="1700">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="1800">18:00</option>
-                                <option value="1830">18:30</option>
-                                <option value="1900">19:00</option>
-                                <option value="1930">19:30</option>
-                                <option value="2000">20:00</option>
-                                <option value="2030">20:30</option>
-                                <option value="2100">21:00</option>
-                                <option value="2130">21:30</option>
-                                <option value="2200">22:00</option>
-                                <option value="2230">22:30</option>
-                                <option value="2300">23:00</option>
-                                <option value="2330">23:30</option>
-                            </select>
-                        </div>
-                        <div class="d-flex flex-column">
-
-                            <div class="form-check d-flex py-3 px-2 gap-1">
-                                <input class="form-check-input fs-2 m-0" type="checkbox">
-                                <label class="form-check-label">Hora màxima sol·licitud comanda</label>
-                            </div>
-
-                            <div class="form-check d-flex py-3 px-2 gap-1">
-                                <input class="form-check-input fs-2 m-0" type="checkbox">
-                                <label class="form-check-label">Abans de tancament</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0 mt-4">
-                        <label class="form-check-label fw-bold fst-italic" for="flexSwitchCheckDefault">NITS</label>
-                        <input class="form-check-input fs-2 m-auto" type="checkbox" role="switch"
-                            id="flexSwitchCheckDefault">
-                    </div>
-                    <div class="mt-4 d-flex justify-content-center align-items-center gap-2">
-                        <div class="align-self-start py-3">
-                            <select name="abrirLunes" id="abrirLunes">
-                                <option value="2400">00:00</option>
-                                <option value="0030">00:30</option>
-                                <option value="0100">01:00</option>
-                                <option value="0130">01:30</option>
-                                <option value="0200">02:00</option>
-                                <option value="0230">02:30</option>
-                                <option value="0300">03:00</option>
-                                <option value="0330">03:30</option>
-                                <option value="0400">04:00</option>
-                                <option value="0430">04:30</option>
-                                <option value="0500">05:00</option>
-                                <option value="0530">05:30</option>
-                                <option value="0600">06:00</option>
-                                <option value="0630">06:30</option>
-                                <option value="0700">07:00</option>
-                                <option value="0730">07:30</option>
-                                <option value="0800">08:00</option>
-                                <option value="0830">08:30</option>
-                                <option value="0900">09:00</option>
-                                <option value="0930">09:30</option>
-                                <option value="1000">10:00</option>
-                                <option value="1030">10:30</option>
-                                <option value="1100">11:00</option>
-                                <option value="1130">11:30</option>
-                                <option value="1200">12:00</option>
-                                <option value="1230">12:30</option>
-                                <option value="1300">13:00</option>
-                                <option value="1330">13:30</option>
-                                <option value="1400">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="1500">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="1600">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="1700">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="1800">18:00</option>
-                                <option value="1830">18:30</option>
-                                <option value="1900">19:00</option>
-                                <option value="1930">19:30</option>
-                                <option value="2000">20:00</option>
-                                <option value="2030">20:30</option>
-                                <option value="2100">21:00</option>
-                                <option value="2130">21:30</option>
-                                <option value="2200">22:00</option>
-                                <option value="2230">22:30</option>
-                                <option value="2300">23:00</option>
-                                <option value="2330">23:30</option>
-                            </select>
-                        </div>
-                        <div class="d-flex flex-column">
-
-                            <div class="form-check d-flex py-3 px-2 gap-1">
-                                <input class="form-check-input fs-2 m-0" type="checkbox">
-                                <label class="form-check-label">Hora màxima sol·licitud comanda</label>
-                            </div>
-
-                            <div class="form-check d-flex py-3 px-2 gap-1">
-                                <input class="form-check-input fs-2 m-0" type="checkbox">
-                                <label class="form-check-label">Abans de tancament</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-center gap-4">
+                    <div class="d-flex justify-content-center gap-4 col-xl-4 m-auto mt-lg-4">
                         <label for="bizzum">BIZZUM</label>
                         <input type="text" placeholder="teléfono de pago" class="col-5 px-2 text-center">
                     </div>
+
                 </div>
 
-                <div class="mt-5">
-                    <h2 class="mt-5">SERVICIO A DOMICILIO</h2>
+                <div>
 
-                    <div class="mt-5">
-                        <h2 class="mt-4">POBLACIONES CON SERVICIO A DOMICILIO</h2>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <span class="px-2">POBLACIONES DISPONIBLES</span>
-                                <textarea name="" id="" cols="15" rows="10"></textarea>
-                                <br>
-                                <button class="border-0 rounded-2 px-1">>></button>
+                    <div class="mt-4">
+                        <h2>HORARIS</h2>
+                        <p>Els nostres horaris</p>
+
+                        <div class="d-flex justify-content-center gap-5">
+                            <div
+                                class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
+                                <label class="form-check-label" for="switch-1">MATI</label>
+                                <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
                             </div>
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <span class="px-2">POBLACIONES CON REPARTO</span>
-                                <textarea name="" id="" cols="15" rows="10"></textarea>
-                                <br>
-                                <button class="border-0 rounded-2 px-1">
-                                    << </button>
+
+                            <div
+                                class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
+                                <label class="form-check-label" for="switch-2">TARDA</label>
+                                <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-2">
+                            </div>
+
+                            <div
+                                class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
+                                <label class="form-check-label" for="switch-2">NIT</label>
+                                <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-2">
                             </div>
                         </div>
+
+                        <div class="row mt-2">
+                            <div class="col-4 d-flex gap-1 justify-content-center">
+                                <label for="">DL</label>
+                                <input type="checkbox">
+                            </div>
+                            <div class="col-4">
+                                <select name="abrirLunes" id="abrirLunes">
+                                    <option value="2400">00:00</option>
+                                    <option value="0030">00:30</option>
+                                    <option value="0100">01:00</option>
+                                    <option value="0130">01:30</option>
+                                    <option value="0200">02:00</option>
+                                    <option value="0230">02:30</option>
+                                    <option value="0300">03:00</option>
+                                    <option value="0330">03:30</option>
+                                    <option value="0400">04:00</option>
+                                    <option value="0430">04:30</option>
+                                    <option value="0500">05:00</option>
+                                    <option value="0530">05:30</option>
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">08:00</option>
+                                    <option value="0830">08:30</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">22:30</option>
+                                    <option value="2300">23:00</option>
+                                    <option value="2330">23:30</option>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                                <select name="abrirLunes" id="abrirLunes">
+                                    <option value="2400">00:00</option>
+                                    <option value="0030">00:30</option>
+                                    <option value="0100">01:00</option>
+                                    <option value="0130">01:30</option>
+                                    <option value="0200">02:00</option>
+                                    <option value="0230">02:30</option>
+                                    <option value="0300">03:00</option>
+                                    <option value="0330">03:30</option>
+                                    <option value="0400">04:00</option>
+                                    <option value="0430">04:30</option>
+                                    <option value="0500">05:00</option>
+                                    <option value="0530">05:30</option>
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">08:00</option>
+                                    <option value="0830">08:30</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">22:30</option>
+                                    <option value="2300">23:00</option>
+                                    <option value="2330">23:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-4 d-flex gap-1 justify-content-center">
+                                <label for="">DT</label>
+                                <input type="checkbox">
+                            </div>
+                            <div class="col-4">
+                                <select name="abrirMartes" id="abrirMartes">
+                                    <option value="2400">00:00</option>
+                                    <option value="0030">00:30</option>
+                                    <option value="0100">01:00</option>
+                                    <option value="0130">01:30</option>
+                                    <option value="0200">02:00</option>
+                                    <option value="0230">02:30</option>
+                                    <option value="0300">03:00</option>
+                                    <option value="0330">03:30</option>
+                                    <option value="0400">04:00</option>
+                                    <option value="0430">04:30</option>
+                                    <option value="0500">05:00</option>
+                                    <option value="0530">05:30</option>
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">08:00</option>
+                                    <option value="0830">08:30</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">22:30</option>
+                                    <option value="2300">23:00</option>
+                                    <option value="2330">23:30</option>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                                <select name="abrirMartes" id="abrirMartes">
+                                    <option value="2400">00:00</option>
+                                    <option value="0030">00:30</option>
+                                    <option value="0100">01:00</option>
+                                    <option value="0130">01:30</option>
+                                    <option value="0200">02:00</option>
+                                    <option value="0230">02:30</option>
+                                    <option value="0300">03:00</option>
+                                    <option value="0330">03:30</option>
+                                    <option value="0400">04:00</option>
+                                    <option value="0430">04:30</option>
+                                    <option value="0500">05:00</option>
+                                    <option value="0530">05:30</option>
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">08:00</option>
+                                    <option value="0830">08:30</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">22:30</option>
+                                    <option value="2300">23:00</option>
+                                    <option value="2330">23:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-4 d-flex gap-1 justify-content-center">
+                                <label for="">DC</label>
+                                <input type="checkbox">
+                            </div>
+                            <div class="col-4">
+                                <select name="abrirMiercoles" id="abrirMiercoles">
+                                    <option value="2400">00:00</option>
+                                    <option value="0030">00:30</option>
+                                    <option value="0100">01:00</option>
+                                    <option value="0130">01:30</option>
+                                    <option value="0200">02:00</option>
+                                    <option value="0230">02:30</option>
+                                    <option value="0300">03:00</option>
+                                    <option value="0330">03:30</option>
+                                    <option value="0400">04:00</option>
+                                    <option value="0430">04:30</option>
+                                    <option value="0500">05:00</option>
+                                    <option value="0530">05:30</option>
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">08:00</option>
+                                    <option value="0830">08:30</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">22:30</option>
+                                    <option value="2300">23:00</option>
+                                    <option value="2330">23:30</option>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                                <select name="abrirMiercoles" id="abrirMiercoles">
+                                    <option value="2400">00:00</option>
+                                    <option value="0030">00:30</option>
+                                    <option value="0100">01:00</option>
+                                    <option value="0130">01:30</option>
+                                    <option value="0200">02:00</option>
+                                    <option value="0230">02:30</option>
+                                    <option value="0300">03:00</option>
+                                    <option value="0330">03:30</option>
+                                    <option value="0400">04:00</option>
+                                    <option value="0430">04:30</option>
+                                    <option value="0500">05:00</option>
+                                    <option value="0530">05:30</option>
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">08:00</option>
+                                    <option value="0830">08:30</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">22:30</option>
+                                    <option value="2300">23:00</option>
+                                    <option value="2330">23:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-4 d-flex gap-1 justify-content-center">
+                                <label for="">DJ</label>
+                                <input type="checkbox">
+                            </div>
+                            <div class="col-4">
+                                <select name="abrirJueves" id="abrirJueves">
+                                    <option value="2400">00:00</option>
+                                    <option value="0030">00:30</option>
+                                    <option value="0100">01:00</option>
+                                    <option value="0130">01:30</option>
+                                    <option value="0200">02:00</option>
+                                    <option value="0230">02:30</option>
+                                    <option value="0300">03:00</option>
+                                    <option value="0330">03:30</option>
+                                    <option value="0400">04:00</option>
+                                    <option value="0430">04:30</option>
+                                    <option value="0500">05:00</option>
+                                    <option value="0530">05:30</option>
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">08:00</option>
+                                    <option value="0830">08:30</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">22:30</option>
+                                    <option value="2300">23:00</option>
+                                    <option value="2330">23:30</option>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                                <select name="abrirJueves" id="abrirJueves">
+                                    <option value="2400">00:00</option>
+                                    <option value="0030">00:30</option>
+                                    <option value="0100">01:00</option>
+                                    <option value="0130">01:30</option>
+                                    <option value="0200">02:00</option>
+                                    <option value="0230">02:30</option>
+                                    <option value="0300">03:00</option>
+                                    <option value="0330">03:30</option>
+                                    <option value="0400">04:00</option>
+                                    <option value="0430">04:30</option>
+                                    <option value="0500">05:00</option>
+                                    <option value="0530">05:30</option>
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">08:00</option>
+                                    <option value="0830">08:30</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">22:30</option>
+                                    <option value="2300">23:00</option>
+                                    <option value="2330">23:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-4 d-flex gap-1 justify-content-center">
+                                <label for="">DV</label>
+                                <input type="checkbox">
+                            </div>
+                            <div class="col-4">
+                                <select name="abrirViernes" id="abrirViernes">
+                                    <option value="2400">00:00</option>
+                                    <option value="0030">00:30</option>
+                                    <option value="0100">01:00</option>
+                                    <option value="0130">01:30</option>
+                                    <option value="0200">02:00</option>
+                                    <option value="0230">02:30</option>
+                                    <option value="0300">03:00</option>
+                                    <option value="0330">03:30</option>
+                                    <option value="0400">04:00</option>
+                                    <option value="0430">04:30</option>
+                                    <option value="0500">05:00</option>
+                                    <option value="0530">05:30</option>
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">08:00</option>
+                                    <option value="0830">08:30</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">22:30</option>
+                                    <option value="2300">23:00</option>
+                                    <option value="2330">23:30</option>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                                <select name="abrirViernes" id="abrirViernes">
+                                    <option value="2400">00:00</option>
+                                    <option value="0030">00:30</option>
+                                    <option value="0100">01:00</option>
+                                    <option value="0130">01:30</option>
+                                    <option value="0200">02:00</option>
+                                    <option value="0230">02:30</option>
+                                    <option value="0300">03:00</option>
+                                    <option value="0330">03:30</option>
+                                    <option value="0400">04:00</option>
+                                    <option value="0430">04:30</option>
+                                    <option value="0500">05:00</option>
+                                    <option value="0530">05:30</option>
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">08:00</option>
+                                    <option value="0830">08:30</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">22:30</option>
+                                    <option value="2300">23:00</option>
+                                    <option value="2330">23:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-4 d-flex gap-1 justify-content-center">
+                                <label for="">DS</label>
+                                <input type="checkbox">
+                            </div>
+                            <div class="col-4">
+                                <select name="abrirSabado" id="abrirSabado">
+                                    <option value="2400">00:00</option>
+                                    <option value="0030">00:30</option>
+                                    <option value="0100">01:00</option>
+                                    <option value="0130">01:30</option>
+                                    <option value="0200">02:00</option>
+                                    <option value="0230">02:30</option>
+                                    <option value="0300">03:00</option>
+                                    <option value="0330">03:30</option>
+                                    <option value="0400">04:00</option>
+                                    <option value="0430">04:30</option>
+                                    <option value="0500">05:00</option>
+                                    <option value="0530">05:30</option>
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">08:00</option>
+                                    <option value="0830">08:30</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">22:30</option>
+                                    <option value="2300">23:00</option>
+                                    <option value="2330">23:30</option>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                                <select name="abrirSabado" id="abrirSabado">
+                                    <option value="2400">00:00</option>
+                                    <option value="0030">00:30</option>
+                                    <option value="0100">01:00</option>
+                                    <option value="0130">01:30</option>
+                                    <option value="0200">02:00</option>
+                                    <option value="0230">02:30</option>
+                                    <option value="0300">03:00</option>
+                                    <option value="0330">03:30</option>
+                                    <option value="0400">04:00</option>
+                                    <option value="0430">04:30</option>
+                                    <option value="0500">05:00</option>
+                                    <option value="0530">05:30</option>
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">08:00</option>
+                                    <option value="0830">08:30</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">22:30</option>
+                                    <option value="2300">23:00</option>
+                                    <option value="2330">23:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-4 d-flex gap-1 justify-content-center">
+                                <label for="">DG</label>
+                                <input type="checkbox">
+                            </div>
+                            <div class="col-4">
+                                <select name="abrirDomingo" id="abrirDomingo">
+                                    <option value="2400">00:00</option>
+                                    <option value="0030">00:30</option>
+                                    <option value="0100">01:00</option>
+                                    <option value="0130">01:30</option>
+                                    <option value="0200">02:00</option>
+                                    <option value="0230">02:30</option>
+                                    <option value="0300">03:00</option>
+                                    <option value="0330">03:30</option>
+                                    <option value="0400">04:00</option>
+                                    <option value="0430">04:30</option>
+                                    <option value="0500">05:00</option>
+                                    <option value="0530">05:30</option>
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">08:00</option>
+                                    <option value="0830">08:30</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">22:30</option>
+                                    <option value="2300">23:00</option>
+                                    <option value="2330">23:30</option>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                                <select name="abrirDomingo" id="abrirDomingo">
+                                    <option value="2400">00:00</option>
+                                    <option value="0030">00:30</option>
+                                    <option value="0100">01:00</option>
+                                    <option value="0130">01:30</option>
+                                    <option value="0200">02:00</option>
+                                    <option value="0230">02:30</option>
+                                    <option value="0300">03:00</option>
+                                    <option value="0330">03:30</option>
+                                    <option value="0400">04:00</option>
+                                    <option value="0430">04:30</option>
+                                    <option value="0500">05:00</option>
+                                    <option value="0530">05:30</option>
+                                    <option value="0600">06:00</option>
+                                    <option value="0630">06:30</option>
+                                    <option value="0700">07:00</option>
+                                    <option value="0730">07:30</option>
+                                    <option value="0800">08:00</option>
+                                    <option value="0830">08:30</option>
+                                    <option value="0900">09:00</option>
+                                    <option value="0930">09:30</option>
+                                    <option value="1000">10:00</option>
+                                    <option value="1030">10:30</option>
+                                    <option value="1100">11:00</option>
+                                    <option value="1130">11:30</option>
+                                    <option value="1200">12:00</option>
+                                    <option value="1230">12:30</option>
+                                    <option value="1300">13:00</option>
+                                    <option value="1330">13:30</option>
+                                    <option value="1400">14:00</option>
+                                    <option value="1430">14:30</option>
+                                    <option value="1500">15:00</option>
+                                    <option value="1530">15:30</option>
+                                    <option value="1600">16:00</option>
+                                    <option value="1630">16:30</option>
+                                    <option value="1700">17:00</option>
+                                    <option value="1730">17:30</option>
+                                    <option value="1800">18:00</option>
+                                    <option value="1830">18:30</option>
+                                    <option value="1900">19:00</option>
+                                    <option value="1930">19:30</option>
+                                    <option value="2000">20:00</option>
+                                    <option value="2030">20:30</option>
+                                    <option value="2100">21:00</option>
+                                    <option value="2130">21:30</option>
+                                    <option value="2200">22:00</option>
+                                    <option value="2230">22:30</option>
+                                    <option value="2300">23:00</option>
+                                    <option value="2330">23:30</option>
+                                </select>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="mt-4 text-center p-2">
-                        <span>AFEGIR POBLACIÓ</span>
-                        <input type="text">
-                        <button class="rounded-5 px-2">Grabar</button>
-                    </div>
-                </div>
-
-
-
-                <div class="mt-4">
-                    <h2>HORARIS</h2>
-                    <p>Els nostres horaris</p>
-
-                    <div class="d-flex justify-content-center gap-5">
-                        <div
-                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
-                            <label class="form-check-label" for="switch-1">MATI</label>
-                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-1">
+                    <div class="row">
+                        <div class="mt-4">
+                            <h2>TEMPORADES</h2>
+                            <div class="row gap-2 justify-content-center align-items-center p-2">
+                                <h2>Noves dates Temporada</h2>
+                                <div class=" row col-6">
+                                    <label for="inicioVacaciones">Inici</label>
+                                    <input type="date" name="finVacaciones">
+                                </div>
+                                <div class="row col-6">
+                                    <label for="finVacaciones">Final</label>
+                                    <input type="date" name="finVacaciones">
+                                </div>
+                                <div></div>
+                            </div>
+                            <button class="mt-4 rounded-5 py-1 px-4">Afegir</button>
                         </div>
 
-                        <div
-                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
-                            <label class="form-check-label" for="switch-2">TARDA</label>
-                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-2">
-                        </div>
-
-                        <div
-                            class="form-check form-switch d-flex flex-column justify-content-center align-items-center p-0">
-                            <label class="form-check-label" for="switch-2">NIT</label>
-                            <input class="form-check-input m-auto fs-2" type="checkbox" role="switch" id="switch-2">
-                        </div>
-                    </div>
-
-                    <div class="row mt-2">
-                        <div class="col-4 d-flex gap-1 justify-content-center">
-                            <label for="">DL</label>
-                            <input type="checkbox">
-                        </div>
-                        <div class="col-4">
-                            <select name="abrirLunes" id="abrirLunes">
-                                <option value="2400">00:00</option>
-                                <option value="0030">00:30</option>
-                                <option value="0100">01:00</option>
-                                <option value="0130">01:30</option>
-                                <option value="0200">02:00</option>
-                                <option value="0230">02:30</option>
-                                <option value="0300">03:00</option>
-                                <option value="0330">03:30</option>
-                                <option value="0400">04:00</option>
-                                <option value="0430">04:30</option>
-                                <option value="0500">05:00</option>
-                                <option value="0530">05:30</option>
-                                <option value="0600">06:00</option>
-                                <option value="0630">06:30</option>
-                                <option value="0700">07:00</option>
-                                <option value="0730">07:30</option>
-                                <option value="0800">08:00</option>
-                                <option value="0830">08:30</option>
-                                <option value="0900">09:00</option>
-                                <option value="0930">09:30</option>
-                                <option value="1000">10:00</option>
-                                <option value="1030">10:30</option>
-                                <option value="1100">11:00</option>
-                                <option value="1130">11:30</option>
-                                <option value="1200">12:00</option>
-                                <option value="1230">12:30</option>
-                                <option value="1300">13:00</option>
-                                <option value="1330">13:30</option>
-                                <option value="1400">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="1500">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="1600">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="1700">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="1800">18:00</option>
-                                <option value="1830">18:30</option>
-                                <option value="1900">19:00</option>
-                                <option value="1930">19:30</option>
-                                <option value="2000">20:00</option>
-                                <option value="2030">20:30</option>
-                                <option value="2100">21:00</option>
-                                <option value="2130">21:30</option>
-                                <option value="2200">22:00</option>
-                                <option value="2230">22:30</option>
-                                <option value="2300">23:00</option>
-                                <option value="2330">23:30</option>
-                            </select>
-                        </div>
-                        <div class="col-4">
-                            <select name="abrirLunes" id="abrirLunes">
-                                <option value="2400">00:00</option>
-                                <option value="0030">00:30</option>
-                                <option value="0100">01:00</option>
-                                <option value="0130">01:30</option>
-                                <option value="0200">02:00</option>
-                                <option value="0230">02:30</option>
-                                <option value="0300">03:00</option>
-                                <option value="0330">03:30</option>
-                                <option value="0400">04:00</option>
-                                <option value="0430">04:30</option>
-                                <option value="0500">05:00</option>
-                                <option value="0530">05:30</option>
-                                <option value="0600">06:00</option>
-                                <option value="0630">06:30</option>
-                                <option value="0700">07:00</option>
-                                <option value="0730">07:30</option>
-                                <option value="0800">08:00</option>
-                                <option value="0830">08:30</option>
-                                <option value="0900">09:00</option>
-                                <option value="0930">09:30</option>
-                                <option value="1000">10:00</option>
-                                <option value="1030">10:30</option>
-                                <option value="1100">11:00</option>
-                                <option value="1130">11:30</option>
-                                <option value="1200">12:00</option>
-                                <option value="1230">12:30</option>
-                                <option value="1300">13:00</option>
-                                <option value="1330">13:30</option>
-                                <option value="1400">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="1500">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="1600">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="1700">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="1800">18:00</option>
-                                <option value="1830">18:30</option>
-                                <option value="1900">19:00</option>
-                                <option value="1930">19:30</option>
-                                <option value="2000">20:00</option>
-                                <option value="2030">20:30</option>
-                                <option value="2100">21:00</option>
-                                <option value="2130">21:30</option>
-                                <option value="2200">22:00</option>
-                                <option value="2230">22:30</option>
-                                <option value="2300">23:00</option>
-                                <option value="2330">23:30</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-4 d-flex gap-1 justify-content-center">
-                            <label for="">DT</label>
-                            <input type="checkbox">
-                        </div>
-                        <div class="col-4">
-                            <select name="abrirMartes" id="abrirMartes">
-                                <option value="2400">00:00</option>
-                                <option value="0030">00:30</option>
-                                <option value="0100">01:00</option>
-                                <option value="0130">01:30</option>
-                                <option value="0200">02:00</option>
-                                <option value="0230">02:30</option>
-                                <option value="0300">03:00</option>
-                                <option value="0330">03:30</option>
-                                <option value="0400">04:00</option>
-                                <option value="0430">04:30</option>
-                                <option value="0500">05:00</option>
-                                <option value="0530">05:30</option>
-                                <option value="0600">06:00</option>
-                                <option value="0630">06:30</option>
-                                <option value="0700">07:00</option>
-                                <option value="0730">07:30</option>
-                                <option value="0800">08:00</option>
-                                <option value="0830">08:30</option>
-                                <option value="0900">09:00</option>
-                                <option value="0930">09:30</option>
-                                <option value="1000">10:00</option>
-                                <option value="1030">10:30</option>
-                                <option value="1100">11:00</option>
-                                <option value="1130">11:30</option>
-                                <option value="1200">12:00</option>
-                                <option value="1230">12:30</option>
-                                <option value="1300">13:00</option>
-                                <option value="1330">13:30</option>
-                                <option value="1400">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="1500">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="1600">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="1700">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="1800">18:00</option>
-                                <option value="1830">18:30</option>
-                                <option value="1900">19:00</option>
-                                <option value="1930">19:30</option>
-                                <option value="2000">20:00</option>
-                                <option value="2030">20:30</option>
-                                <option value="2100">21:00</option>
-                                <option value="2130">21:30</option>
-                                <option value="2200">22:00</option>
-                                <option value="2230">22:30</option>
-                                <option value="2300">23:00</option>
-                                <option value="2330">23:30</option>
-                            </select>
-                        </div>
-                        <div class="col-4">
-                            <select name="abrirMartes" id="abrirMartes">
-                                <option value="2400">00:00</option>
-                                <option value="0030">00:30</option>
-                                <option value="0100">01:00</option>
-                                <option value="0130">01:30</option>
-                                <option value="0200">02:00</option>
-                                <option value="0230">02:30</option>
-                                <option value="0300">03:00</option>
-                                <option value="0330">03:30</option>
-                                <option value="0400">04:00</option>
-                                <option value="0430">04:30</option>
-                                <option value="0500">05:00</option>
-                                <option value="0530">05:30</option>
-                                <option value="0600">06:00</option>
-                                <option value="0630">06:30</option>
-                                <option value="0700">07:00</option>
-                                <option value="0730">07:30</option>
-                                <option value="0800">08:00</option>
-                                <option value="0830">08:30</option>
-                                <option value="0900">09:00</option>
-                                <option value="0930">09:30</option>
-                                <option value="1000">10:00</option>
-                                <option value="1030">10:30</option>
-                                <option value="1100">11:00</option>
-                                <option value="1130">11:30</option>
-                                <option value="1200">12:00</option>
-                                <option value="1230">12:30</option>
-                                <option value="1300">13:00</option>
-                                <option value="1330">13:30</option>
-                                <option value="1400">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="1500">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="1600">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="1700">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="1800">18:00</option>
-                                <option value="1830">18:30</option>
-                                <option value="1900">19:00</option>
-                                <option value="1930">19:30</option>
-                                <option value="2000">20:00</option>
-                                <option value="2030">20:30</option>
-                                <option value="2100">21:00</option>
-                                <option value="2130">21:30</option>
-                                <option value="2200">22:00</option>
-                                <option value="2230">22:30</option>
-                                <option value="2300">23:00</option>
-                                <option value="2330">23:30</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-4 d-flex gap-1 justify-content-center">
-                            <label for="">DC</label>
-                            <input type="checkbox">
-                        </div>
-                        <div class="col-4">
-                            <select name="abrirMiercoles" id="abrirMiercoles">
-                                <option value="2400">00:00</option>
-                                <option value="0030">00:30</option>
-                                <option value="0100">01:00</option>
-                                <option value="0130">01:30</option>
-                                <option value="0200">02:00</option>
-                                <option value="0230">02:30</option>
-                                <option value="0300">03:00</option>
-                                <option value="0330">03:30</option>
-                                <option value="0400">04:00</option>
-                                <option value="0430">04:30</option>
-                                <option value="0500">05:00</option>
-                                <option value="0530">05:30</option>
-                                <option value="0600">06:00</option>
-                                <option value="0630">06:30</option>
-                                <option value="0700">07:00</option>
-                                <option value="0730">07:30</option>
-                                <option value="0800">08:00</option>
-                                <option value="0830">08:30</option>
-                                <option value="0900">09:00</option>
-                                <option value="0930">09:30</option>
-                                <option value="1000">10:00</option>
-                                <option value="1030">10:30</option>
-                                <option value="1100">11:00</option>
-                                <option value="1130">11:30</option>
-                                <option value="1200">12:00</option>
-                                <option value="1230">12:30</option>
-                                <option value="1300">13:00</option>
-                                <option value="1330">13:30</option>
-                                <option value="1400">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="1500">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="1600">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="1700">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="1800">18:00</option>
-                                <option value="1830">18:30</option>
-                                <option value="1900">19:00</option>
-                                <option value="1930">19:30</option>
-                                <option value="2000">20:00</option>
-                                <option value="2030">20:30</option>
-                                <option value="2100">21:00</option>
-                                <option value="2130">21:30</option>
-                                <option value="2200">22:00</option>
-                                <option value="2230">22:30</option>
-                                <option value="2300">23:00</option>
-                                <option value="2330">23:30</option>
-                            </select>
-                        </div>
-                        <div class="col-4">
-                            <select name="abrirMiercoles" id="abrirMiercoles">
-                                <option value="2400">00:00</option>
-                                <option value="0030">00:30</option>
-                                <option value="0100">01:00</option>
-                                <option value="0130">01:30</option>
-                                <option value="0200">02:00</option>
-                                <option value="0230">02:30</option>
-                                <option value="0300">03:00</option>
-                                <option value="0330">03:30</option>
-                                <option value="0400">04:00</option>
-                                <option value="0430">04:30</option>
-                                <option value="0500">05:00</option>
-                                <option value="0530">05:30</option>
-                                <option value="0600">06:00</option>
-                                <option value="0630">06:30</option>
-                                <option value="0700">07:00</option>
-                                <option value="0730">07:30</option>
-                                <option value="0800">08:00</option>
-                                <option value="0830">08:30</option>
-                                <option value="0900">09:00</option>
-                                <option value="0930">09:30</option>
-                                <option value="1000">10:00</option>
-                                <option value="1030">10:30</option>
-                                <option value="1100">11:00</option>
-                                <option value="1130">11:30</option>
-                                <option value="1200">12:00</option>
-                                <option value="1230">12:30</option>
-                                <option value="1300">13:00</option>
-                                <option value="1330">13:30</option>
-                                <option value="1400">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="1500">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="1600">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="1700">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="1800">18:00</option>
-                                <option value="1830">18:30</option>
-                                <option value="1900">19:00</option>
-                                <option value="1930">19:30</option>
-                                <option value="2000">20:00</option>
-                                <option value="2030">20:30</option>
-                                <option value="2100">21:00</option>
-                                <option value="2130">21:30</option>
-                                <option value="2200">22:00</option>
-                                <option value="2230">22:30</option>
-                                <option value="2300">23:00</option>
-                                <option value="2330">23:30</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-4 d-flex gap-1 justify-content-center">
-                            <label for="">DJ</label>
-                            <input type="checkbox">
-                        </div>
-                        <div class="col-4">
-                            <select name="abrirJueves" id="abrirJueves">
-                                <option value="2400">00:00</option>
-                                <option value="0030">00:30</option>
-                                <option value="0100">01:00</option>
-                                <option value="0130">01:30</option>
-                                <option value="0200">02:00</option>
-                                <option value="0230">02:30</option>
-                                <option value="0300">03:00</option>
-                                <option value="0330">03:30</option>
-                                <option value="0400">04:00</option>
-                                <option value="0430">04:30</option>
-                                <option value="0500">05:00</option>
-                                <option value="0530">05:30</option>
-                                <option value="0600">06:00</option>
-                                <option value="0630">06:30</option>
-                                <option value="0700">07:00</option>
-                                <option value="0730">07:30</option>
-                                <option value="0800">08:00</option>
-                                <option value="0830">08:30</option>
-                                <option value="0900">09:00</option>
-                                <option value="0930">09:30</option>
-                                <option value="1000">10:00</option>
-                                <option value="1030">10:30</option>
-                                <option value="1100">11:00</option>
-                                <option value="1130">11:30</option>
-                                <option value="1200">12:00</option>
-                                <option value="1230">12:30</option>
-                                <option value="1300">13:00</option>
-                                <option value="1330">13:30</option>
-                                <option value="1400">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="1500">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="1600">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="1700">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="1800">18:00</option>
-                                <option value="1830">18:30</option>
-                                <option value="1900">19:00</option>
-                                <option value="1930">19:30</option>
-                                <option value="2000">20:00</option>
-                                <option value="2030">20:30</option>
-                                <option value="2100">21:00</option>
-                                <option value="2130">21:30</option>
-                                <option value="2200">22:00</option>
-                                <option value="2230">22:30</option>
-                                <option value="2300">23:00</option>
-                                <option value="2330">23:30</option>
-                            </select>
-                        </div>
-                        <div class="col-4">
-                            <select name="abrirJueves" id="abrirJueves">
-                                <option value="2400">00:00</option>
-                                <option value="0030">00:30</option>
-                                <option value="0100">01:00</option>
-                                <option value="0130">01:30</option>
-                                <option value="0200">02:00</option>
-                                <option value="0230">02:30</option>
-                                <option value="0300">03:00</option>
-                                <option value="0330">03:30</option>
-                                <option value="0400">04:00</option>
-                                <option value="0430">04:30</option>
-                                <option value="0500">05:00</option>
-                                <option value="0530">05:30</option>
-                                <option value="0600">06:00</option>
-                                <option value="0630">06:30</option>
-                                <option value="0700">07:00</option>
-                                <option value="0730">07:30</option>
-                                <option value="0800">08:00</option>
-                                <option value="0830">08:30</option>
-                                <option value="0900">09:00</option>
-                                <option value="0930">09:30</option>
-                                <option value="1000">10:00</option>
-                                <option value="1030">10:30</option>
-                                <option value="1100">11:00</option>
-                                <option value="1130">11:30</option>
-                                <option value="1200">12:00</option>
-                                <option value="1230">12:30</option>
-                                <option value="1300">13:00</option>
-                                <option value="1330">13:30</option>
-                                <option value="1400">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="1500">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="1600">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="1700">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="1800">18:00</option>
-                                <option value="1830">18:30</option>
-                                <option value="1900">19:00</option>
-                                <option value="1930">19:30</option>
-                                <option value="2000">20:00</option>
-                                <option value="2030">20:30</option>
-                                <option value="2100">21:00</option>
-                                <option value="2130">21:30</option>
-                                <option value="2200">22:00</option>
-                                <option value="2230">22:30</option>
-                                <option value="2300">23:00</option>
-                                <option value="2330">23:30</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-4 d-flex gap-1 justify-content-center">
-                            <label for="">DV</label>
-                            <input type="checkbox">
-                        </div>
-                        <div class="col-4">
-                            <select name="abrirViernes" id="abrirViernes">
-                                <option value="2400">00:00</option>
-                                <option value="0030">00:30</option>
-                                <option value="0100">01:00</option>
-                                <option value="0130">01:30</option>
-                                <option value="0200">02:00</option>
-                                <option value="0230">02:30</option>
-                                <option value="0300">03:00</option>
-                                <option value="0330">03:30</option>
-                                <option value="0400">04:00</option>
-                                <option value="0430">04:30</option>
-                                <option value="0500">05:00</option>
-                                <option value="0530">05:30</option>
-                                <option value="0600">06:00</option>
-                                <option value="0630">06:30</option>
-                                <option value="0700">07:00</option>
-                                <option value="0730">07:30</option>
-                                <option value="0800">08:00</option>
-                                <option value="0830">08:30</option>
-                                <option value="0900">09:00</option>
-                                <option value="0930">09:30</option>
-                                <option value="1000">10:00</option>
-                                <option value="1030">10:30</option>
-                                <option value="1100">11:00</option>
-                                <option value="1130">11:30</option>
-                                <option value="1200">12:00</option>
-                                <option value="1230">12:30</option>
-                                <option value="1300">13:00</option>
-                                <option value="1330">13:30</option>
-                                <option value="1400">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="1500">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="1600">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="1700">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="1800">18:00</option>
-                                <option value="1830">18:30</option>
-                                <option value="1900">19:00</option>
-                                <option value="1930">19:30</option>
-                                <option value="2000">20:00</option>
-                                <option value="2030">20:30</option>
-                                <option value="2100">21:00</option>
-                                <option value="2130">21:30</option>
-                                <option value="2200">22:00</option>
-                                <option value="2230">22:30</option>
-                                <option value="2300">23:00</option>
-                                <option value="2330">23:30</option>
-                            </select>
-                        </div>
-                        <div class="col-4">
-                            <select name="abrirViernes" id="abrirViernes">
-                                <option value="2400">00:00</option>
-                                <option value="0030">00:30</option>
-                                <option value="0100">01:00</option>
-                                <option value="0130">01:30</option>
-                                <option value="0200">02:00</option>
-                                <option value="0230">02:30</option>
-                                <option value="0300">03:00</option>
-                                <option value="0330">03:30</option>
-                                <option value="0400">04:00</option>
-                                <option value="0430">04:30</option>
-                                <option value="0500">05:00</option>
-                                <option value="0530">05:30</option>
-                                <option value="0600">06:00</option>
-                                <option value="0630">06:30</option>
-                                <option value="0700">07:00</option>
-                                <option value="0730">07:30</option>
-                                <option value="0800">08:00</option>
-                                <option value="0830">08:30</option>
-                                <option value="0900">09:00</option>
-                                <option value="0930">09:30</option>
-                                <option value="1000">10:00</option>
-                                <option value="1030">10:30</option>
-                                <option value="1100">11:00</option>
-                                <option value="1130">11:30</option>
-                                <option value="1200">12:00</option>
-                                <option value="1230">12:30</option>
-                                <option value="1300">13:00</option>
-                                <option value="1330">13:30</option>
-                                <option value="1400">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="1500">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="1600">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="1700">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="1800">18:00</option>
-                                <option value="1830">18:30</option>
-                                <option value="1900">19:00</option>
-                                <option value="1930">19:30</option>
-                                <option value="2000">20:00</option>
-                                <option value="2030">20:30</option>
-                                <option value="2100">21:00</option>
-                                <option value="2130">21:30</option>
-                                <option value="2200">22:00</option>
-                                <option value="2230">22:30</option>
-                                <option value="2300">23:00</option>
-                                <option value="2330">23:30</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-4 d-flex gap-1 justify-content-center">
-                            <label for="">DS</label>
-                            <input type="checkbox">
-                        </div>
-                        <div class="col-4">
-                            <select name="abrirSabado" id="abrirSabado">
-                                <option value="2400">00:00</option>
-                                <option value="0030">00:30</option>
-                                <option value="0100">01:00</option>
-                                <option value="0130">01:30</option>
-                                <option value="0200">02:00</option>
-                                <option value="0230">02:30</option>
-                                <option value="0300">03:00</option>
-                                <option value="0330">03:30</option>
-                                <option value="0400">04:00</option>
-                                <option value="0430">04:30</option>
-                                <option value="0500">05:00</option>
-                                <option value="0530">05:30</option>
-                                <option value="0600">06:00</option>
-                                <option value="0630">06:30</option>
-                                <option value="0700">07:00</option>
-                                <option value="0730">07:30</option>
-                                <option value="0800">08:00</option>
-                                <option value="0830">08:30</option>
-                                <option value="0900">09:00</option>
-                                <option value="0930">09:30</option>
-                                <option value="1000">10:00</option>
-                                <option value="1030">10:30</option>
-                                <option value="1100">11:00</option>
-                                <option value="1130">11:30</option>
-                                <option value="1200">12:00</option>
-                                <option value="1230">12:30</option>
-                                <option value="1300">13:00</option>
-                                <option value="1330">13:30</option>
-                                <option value="1400">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="1500">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="1600">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="1700">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="1800">18:00</option>
-                                <option value="1830">18:30</option>
-                                <option value="1900">19:00</option>
-                                <option value="1930">19:30</option>
-                                <option value="2000">20:00</option>
-                                <option value="2030">20:30</option>
-                                <option value="2100">21:00</option>
-                                <option value="2130">21:30</option>
-                                <option value="2200">22:00</option>
-                                <option value="2230">22:30</option>
-                                <option value="2300">23:00</option>
-                                <option value="2330">23:30</option>
-                            </select>
-                        </div>
-                        <div class="col-4">
-                            <select name="abrirSabado" id="abrirSabado">
-                                <option value="2400">00:00</option>
-                                <option value="0030">00:30</option>
-                                <option value="0100">01:00</option>
-                                <option value="0130">01:30</option>
-                                <option value="0200">02:00</option>
-                                <option value="0230">02:30</option>
-                                <option value="0300">03:00</option>
-                                <option value="0330">03:30</option>
-                                <option value="0400">04:00</option>
-                                <option value="0430">04:30</option>
-                                <option value="0500">05:00</option>
-                                <option value="0530">05:30</option>
-                                <option value="0600">06:00</option>
-                                <option value="0630">06:30</option>
-                                <option value="0700">07:00</option>
-                                <option value="0730">07:30</option>
-                                <option value="0800">08:00</option>
-                                <option value="0830">08:30</option>
-                                <option value="0900">09:00</option>
-                                <option value="0930">09:30</option>
-                                <option value="1000">10:00</option>
-                                <option value="1030">10:30</option>
-                                <option value="1100">11:00</option>
-                                <option value="1130">11:30</option>
-                                <option value="1200">12:00</option>
-                                <option value="1230">12:30</option>
-                                <option value="1300">13:00</option>
-                                <option value="1330">13:30</option>
-                                <option value="1400">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="1500">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="1600">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="1700">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="1800">18:00</option>
-                                <option value="1830">18:30</option>
-                                <option value="1900">19:00</option>
-                                <option value="1930">19:30</option>
-                                <option value="2000">20:00</option>
-                                <option value="2030">20:30</option>
-                                <option value="2100">21:00</option>
-                                <option value="2130">21:30</option>
-                                <option value="2200">22:00</option>
-                                <option value="2230">22:30</option>
-                                <option value="2300">23:00</option>
-                                <option value="2330">23:30</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-4 d-flex gap-1 justify-content-center">
-                            <label for="">DG</label>
-                            <input type="checkbox">
-                        </div>
-                        <div class="col-4">
-                            <select name="abrirDomingo" id="abrirDomingo">
-                                <option value="2400">00:00</option>
-                                <option value="0030">00:30</option>
-                                <option value="0100">01:00</option>
-                                <option value="0130">01:30</option>
-                                <option value="0200">02:00</option>
-                                <option value="0230">02:30</option>
-                                <option value="0300">03:00</option>
-                                <option value="0330">03:30</option>
-                                <option value="0400">04:00</option>
-                                <option value="0430">04:30</option>
-                                <option value="0500">05:00</option>
-                                <option value="0530">05:30</option>
-                                <option value="0600">06:00</option>
-                                <option value="0630">06:30</option>
-                                <option value="0700">07:00</option>
-                                <option value="0730">07:30</option>
-                                <option value="0800">08:00</option>
-                                <option value="0830">08:30</option>
-                                <option value="0900">09:00</option>
-                                <option value="0930">09:30</option>
-                                <option value="1000">10:00</option>
-                                <option value="1030">10:30</option>
-                                <option value="1100">11:00</option>
-                                <option value="1130">11:30</option>
-                                <option value="1200">12:00</option>
-                                <option value="1230">12:30</option>
-                                <option value="1300">13:00</option>
-                                <option value="1330">13:30</option>
-                                <option value="1400">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="1500">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="1600">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="1700">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="1800">18:00</option>
-                                <option value="1830">18:30</option>
-                                <option value="1900">19:00</option>
-                                <option value="1930">19:30</option>
-                                <option value="2000">20:00</option>
-                                <option value="2030">20:30</option>
-                                <option value="2100">21:00</option>
-                                <option value="2130">21:30</option>
-                                <option value="2200">22:00</option>
-                                <option value="2230">22:30</option>
-                                <option value="2300">23:00</option>
-                                <option value="2330">23:30</option>
-                            </select>
-                        </div>
-                        <div class="col-4">
-                            <select name="abrirDomingo" id="abrirDomingo">
-                                <option value="2400">00:00</option>
-                                <option value="0030">00:30</option>
-                                <option value="0100">01:00</option>
-                                <option value="0130">01:30</option>
-                                <option value="0200">02:00</option>
-                                <option value="0230">02:30</option>
-                                <option value="0300">03:00</option>
-                                <option value="0330">03:30</option>
-                                <option value="0400">04:00</option>
-                                <option value="0430">04:30</option>
-                                <option value="0500">05:00</option>
-                                <option value="0530">05:30</option>
-                                <option value="0600">06:00</option>
-                                <option value="0630">06:30</option>
-                                <option value="0700">07:00</option>
-                                <option value="0730">07:30</option>
-                                <option value="0800">08:00</option>
-                                <option value="0830">08:30</option>
-                                <option value="0900">09:00</option>
-                                <option value="0930">09:30</option>
-                                <option value="1000">10:00</option>
-                                <option value="1030">10:30</option>
-                                <option value="1100">11:00</option>
-                                <option value="1130">11:30</option>
-                                <option value="1200">12:00</option>
-                                <option value="1230">12:30</option>
-                                <option value="1300">13:00</option>
-                                <option value="1330">13:30</option>
-                                <option value="1400">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="1500">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="1600">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="1700">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="1800">18:00</option>
-                                <option value="1830">18:30</option>
-                                <option value="1900">19:00</option>
-                                <option value="1930">19:30</option>
-                                <option value="2000">20:00</option>
-                                <option value="2030">20:30</option>
-                                <option value="2100">21:00</option>
-                                <option value="2130">21:30</option>
-                                <option value="2200">22:00</option>
-                                <option value="2230">22:30</option>
-                                <option value="2300">23:00</option>
-                                <option value="2330">23:30</option>
-                            </select>
+                        <div class="mt-4">
+                            <h2>FESTIUS</h2>
+                            <div class="row gap-2 justify-content-center align-items-center p-2">
+                                <h2>Període de vacances</h2>
+                                <div class=" row col-6">
+                                    <label for="inicioVacaciones">Inici</label>
+                                    <input type="date" name="finVacaciones">
+                                </div>
+                                <div class="row col-6">
+                                    <label for="finVacaciones">Final</label>
+                                    <input type="date" name="finVacaciones">
+                                </div>
+                            </div>
+                            <button class="mt-4 rounded-5 py-1 px-4">Afegir</button>
                         </div>
                     </div>
 
-                </div>
-
-                <div class="mt-4">
-                    <h2>FESTIUS</h2>
-                    <div class="row gap-2 justify-content-center align-items-center p-2">
-                        <h2>Període de vacances</h2>
-                        <div class=" row col-6">
-                            <label for="inicioVacaciones">Inici</label>
-                            <input type="date" name="finVacaciones">
+                    <div class="mt-4">
+                        <h2>Els nostres dies festius</h2>
+                        <div class="row gap-2 justify-content-center align-items-center p-2">
+                            <div class=" row col-8">
+                                <label for="diaFestivo">Festiu 1</label>
+                                <input type="date" name="diFestivo">
+                            </div>
+                            <div class=" row col-8">
+                                <label for="inicioVacaciones">Festiu 2</label>
+                                <input type="date" name="diaFestivo">
+                            </div>
                         </div>
-                        <div class="row col-6">
-                            <label for="finVacaciones">Final</label>
-                            <input type="date" name="finVacaciones">
-                        </div>
+                        <button class="mt-4 rounded-5 py-1 px-4">Afegir</button>
                     </div>
-                    <button class="mt-4 rounded-5 py-1 px-4">Afegir</button>
-                </div>
 
-                <div class="mt-4">
-                    <h2>Els nostres dies festius</h2>
-                    <div class="row gap-2 justify-content-center align-items-center p-2">
-                        <div class=" row col-8">
-                            <label for="diaFestivo">Festiu 1</label>
-                            <input type="date" name="diFestivo">
+                    <div class="mt-4">
+                        <h2>Festivos que son dias laborables</h2>
+                        <div class="row gap-2 justify-content-center align-items-center p-2">
+                            <div class=" row col-8">
+                                <label for="diaFestivo">Festiu 1</label>
+                                <input type="date" name="diFestivo">
+                            </div>
+                            <div class=" row col-8">
+                                <label for="inicioVacaciones">Festiu 2</label>
+                                <input type="date" name="diaFestivo">
+                            </div>
                         </div>
-                        <div class=" row col-8">
-                            <label for="inicioVacaciones">Festiu 2</label>
-                            <input type="date" name="diaFestivo">
-                        </div>
+                        <button class="mt-4 rounded-5 py-1 px-4">Afegir</button>
                     </div>
-                    <button class="mt-4 rounded-5 py-1 px-4">Afegir</button>
-                </div>
-
-                <div class="mt-4">
-                    <h2>Festivos que son dias laborables</h2>
-                    <div class="row gap-2 justify-content-center align-items-center p-2">
-                        <div class=" row col-8">
-                            <label for="diaFestivo">Festiu 1</label>
-                            <input type="date" name="diFestivo">
-                        </div>
-                        <div class=" row col-8">
-                            <label for="inicioVacaciones">Festiu 2</label>
-                            <input type="date" name="diaFestivo">
-                        </div>
-                    </div>
-                    <button class="mt-4 rounded-5 py-1 px-4">Afegir</button>
-                </div>
         </form>
 
     </main>
