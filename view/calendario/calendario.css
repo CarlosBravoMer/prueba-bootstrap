@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+}
+
+#contenedor {
+  text-align: center;
+  height: 100vh;
+}
+
+#calendario {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.mes {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: center;
+  display: grid;
+  grid-template-rows: 80px;
+}
+
+ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  grid-template-rows: 90px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #2a235c;
+}
+
+.primer-dia {
+  grid-column-start: var(--primer-dia-empieza);
+}
+
+.nombre-dia {
+  background: #2a235c;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 12px;
+  padding: 4px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botones {
+  background: #2a235c;
+  color: #fff;
+  border-radius: 100px;
+  border: 0;
+  bottom: 32px;
+  right: 15px;
+  padding: 16px;
+  height: 50px;
+  width: 70px;
+  cursor: pointer;
+
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#arriba {
+  bottom: 100px;
+}
+
+.day-selected {
+  cursor: pointer;
+  font-size: 20px;
+}
